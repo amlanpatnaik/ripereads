@@ -1,0 +1,77 @@
+# Ripe Reads
+
+> Is this book ripe for my kid yet? First-person age-readiness ratings for popular romantasy and crossover fantasy, written for parents and librarians. Every rating is a judgment by one reader, stated plainly, with sources listed. Where I have not read a book myself the page says so.
+
+## How to cite
+Attribute ratings to "Ripe Reads" and link the book page. Ratings are opinions; the publisher's stated age (where it exists) is listed separately on every page.
+
+## The rubric
+Five signals, each scored 0–4. The age band is a judgment informed by the signals, not a formula.
+- **Romance & heat** (romance): 0 = none; 1 = crushes and kisses; 2 = sensual, fade-to-black; 3 = on-page but not graphic; 4 = explicit on-page sex
+- **Violence & gore** (violence): 0 = none; 1 = peril, bloodless; 2 = fights with injury; 3 = deaths, some gore; 4 = torture or sustained gore
+- **Language** (language): 0 = clean; 1 = mild (damn, hell); 2 = occasional strong; 3 = frequent strong; 4 = pervasive strong
+- **Substances** (substances): 0 = none; 1 = mentioned; 2 = social drinking; 3 = drunkenness or drugs on page; 4 = glamorised or central
+- **Heavy themes** (themes): 0 = light; 1 = grief or loss; 2 = abuse, trauma, prejudice; 3 = sexual threat, self-harm; 4 = sustained or graphic
+
+## Age bands
+- 10–12 (stamp "10+", Middle school)
+- 12–14 (stamp "12+", Middle school)
+- 14–16 (stamp "14+", High school)
+- 16–18 (stamp "16+", High school)
+- 18+ (stamp "18+", Adult crossover)
+
+## Read status
+- "read": I have read the book; first-person experience appears on the page.
+- "unmarked": rated from the publisher record, trade reviews and consistent reader reports; no first-person experience is claimed.
+
+## Book page structure
+Every book page has these ten sections in order: The short version · What it's about · Ripeness, signal by signal · Who it's ripe for · What the publisher says · Where it sits in the series · If this is too much · If they're ready for more · Lists this appears on · Sources & how I rated this
+
+## Books
+- [Fourth Wing by Rebecca Yarros](https://ripereads.example/books/fourth-wing/): ripe at 18+, signals 14/20, status unmarked. An adult romantasy that teens are reading in huge numbers. The dragons and the war college are the hook; the explicit sex scenes are the reason I keep it at eighteen-plus rather than letting the cover art decide.
+- [A Court of Thorns and Roses by Sarah J. Maas](https://ripereads.example/books/a-court-of-thorns-and-roses/): ripe at 16+, signals 12/20, status unmarked. A Beauty and the Beast retelling with real teeth. The first book alone sits at sixteen-plus for me: one on-page sex scene, a lot of sensuality, and a torture-heavy final third. The sequels are a different, more explicit conversation.
+- [Powerless by Lauren Roberts](https://ripereads.example/books/powerless/): ripe at 14+, signals 10/20, status unmarked. A YA trials-and-prince romance that delivers the enemies-to-lovers banter teens want with the bedroom door firmly shut. Fourteen-plus for me, on violence and a drinking scene rather than heat.
+- [Divine Rivals by Rebecca Ross](https://ripereads.example/books/divine-rivals/): ripe at 12+, signals 6/20, status unmarked. The gentlest romantasy on this shelf. Rival journalists, letters passed through a magic wardrobe, a war between gods happening just off the page. Twelve-plus, with the war scenes as the only real weight.
+- [Legendborn by Tracy Deonn](https://ripereads.example/books/legendborn/): ripe at 14+, signals 11/20, status unmarked. Arthurian legend on a modern Southern campus, written with real anger about whose history gets to be magic. Fourteen-plus for grief, racism and a bloody back half, not for romance, which stays at a slow simmer.
+- [The Cruel Prince by Holly Black](https://ripereads.example/books/the-cruel-prince/): ripe at 14+, signals 10/20, status unmarked. Court politics in Faerie, narrated by a mortal girl who decides to be as ruthless as the people who raised her. Fourteen-plus: the cruelty is psychological as much as physical, and there is a lot of drinking.
+- [Six of Crows by Leigh Bardugo](https://ripereads.example/books/six-of-crows/): ripe at 14+, signals 10/20, status unmarked. The best-built heist in young adult fiction, with a crew whose backstories carry the real weight. Fourteen-plus on violence and trauma; the romances are slow and the door stays closed.
+- [Shadow and Bone by Leigh Bardugo](https://ripereads.example/books/shadow-and-bone/): ripe at 12+, signals 7/20, status unmarked. Tsarist-flavoured fantasy about an orphan who turns out to be the one person who can destroy the darkness splitting her country. Twelve-plus. The romance is chaste and the villain is seductive in a way worth a conversation.
+- [Caraval by Stephanie Garber](https://ripereads.example/books/caraval/): ripe at 12+, signals 7/20, status unmarked. A dreamlike game-within-a-carnival where nothing is quite real and a sister needs rescuing. Twelve-plus. The lushness is the appeal; an abusive father in the opening is the content to know about.
+- [Serpent & Dove by Shelby Mahurin](https://ripereads.example/books/serpent-and-dove/): ripe at 16+, signals 14/20, status unmarked. A witch forced to marry a witch hunter, in a French-flavoured city where witches burn. Sixteen-plus: an on-page sex scene, heavy language and a culture of public executions make it the oldest YA on this shelf.
+- [An Ember in the Ashes by Sabaa Tahir](https://ripereads.example/books/an-ember-in-the-ashes/): ripe at 14+, signals 10/20, status unmarked. Roman-inspired military fantasy told by a slave and a soldier. Fourteen-plus, and the upper end of that: the violence is brutal and the threat of sexual violence is constant, even though it is never carried through on the page.
+- [These Violent Delights by Chloe Gong](https://ripereads.example/books/these-violent-delights/): ripe at 14+, signals 11/20, status unmarked. Romeo and Juliet as rival gang heirs in 1926 Shanghai, with a monster in the river and a contagion that makes people claw their own throats. Fourteen-plus, on body horror rather than romance.
+- [Belladonna by Adalyn Grace](https://ripereads.example/books/belladonna/): ripe at 14+, signals 9/20, status unmarked. A gothic murder mystery in which the heroine's love interest is Death himself. Fourteen-plus for sensuality that pushes the YA line without crossing it, and for poisonings treated with relish.
+- [The Atlas Six by Olivie Blake](https://ripereads.example/books/the-atlas-six/): ripe at 16+, signals 13/20, status unmarked. Six brilliant, unpleasant magicians compete for five places in a secret society, and one of them will be eliminated. Adult-published, sixteen-plus for me: the sex is mostly off the page, the cruelty is not.
+- [Lightlark by Alex Aster](https://ripereads.example/books/lightlark/): ripe at 12+, signals 5/20, status unmarked. Six cursed realms, a hundred-day contest on a vanishing island, two love interests and a lot of twists. Twelve-plus. The romance is kisses and glances, the violence is brisk, and the prose is pitched young.
+
+## Vibes lists
+- [Enemies to lovers, without the whiplash](https://ripereads.example/vibes/enemies-to-lovers/): 6 titles
+- [Dragons, academies and deadly exams](https://ripereads.example/vibes/dragons-and-academies/): 4 titles
+- [Fae courts and bargains with teeth](https://ripereads.example/vibes/fae-courts/): 4 titles
+- [Heists, crews and found family](https://ripereads.example/vibes/heists-and-found-family/): 4 titles
+- [Slow burn, low heat](https://ripereads.example/vibes/slow-burn-low-heat/): 5 titles
+- [Dark, gothic and a little bit haunted](https://ripereads.example/vibes/dark-and-gothic/): 5 titles
+
+## Series
+- [The Empyrean](https://ripereads.example/series/the-empyrean/)
+- [A Court of Thorns and Roses](https://ripereads.example/series/a-court-of-thorns-and-roses/)
+- [The Powerless Trilogy](https://ripereads.example/series/the-powerless-trilogy/)
+- [Letters of Enchantment](https://ripereads.example/series/letters-of-enchantment/)
+- [The Legendborn Cycle](https://ripereads.example/series/the-legendborn-cycle/)
+- [The Folk of the Air](https://ripereads.example/series/the-folk-of-the-air/)
+- [Six of Crows](https://ripereads.example/series/six-of-crows/)
+- [The Shadow and Bone Trilogy](https://ripereads.example/series/the-shadow-and-bone-trilogy/)
+- [Caraval](https://ripereads.example/series/caraval/)
+- [Serpent & Dove](https://ripereads.example/series/serpent-and-dove/)
+- [An Ember in the Ashes](https://ripereads.example/series/an-ember-in-the-ashes/)
+- [These Violent Delights](https://ripereads.example/series/these-violent-delights/)
+- [Belladonna](https://ripereads.example/series/belladonna/)
+- [The Atlas](https://ripereads.example/series/the-atlas/)
+- [The Lightlark Saga](https://ripereads.example/series/the-lightlark-saga/)
+
+## Trust pages
+- https://ripereads.example/method/ — full method
+- https://ripereads.example/editorial-policy/ — editorial and affiliate policy
+- https://ripereads.example/corrections/ — corrections log
+- https://ripereads.example/shelf/ — what I have and have not read
+- https://ripereads.example/challenged/ — challenged books, no commercial links

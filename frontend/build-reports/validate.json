@@ -1,0 +1,23 @@
+{
+  "summary": {
+    "books": 15,
+    "vibes": 6,
+    "routes": 74,
+    "ageBands": 5,
+    "grades": 3,
+    "errors": 1,
+    "warnings": 7
+  },
+  "errors": [
+    "about: 4 [[SLOT]] markers still unfilled (owner action; build stays red by design)"
+  ],
+  "warnings": [
+    "fourth-wing: only 0 step-up titles available",
+    "divine-rivals: only 1 step-down titles available",
+    "shadow-and-bone: only 2 step-down titles available",
+    "caraval: only 2 step-down titles available",
+    "serpent-and-dove: only 1 step-up titles available",
+    "the-atlas-six: only 2 step-up titles available",
+    "lightlark: only 0 step-down titles available"
+  ]
+}

@@ -1,0 +1,11 @@
+# Never deploy strategy or planning documents
+STRATEGY.md
+BUILD.md
+CONTENT.md
+DESIGN.md
+PUBLISHED.md
+memory/
+test_reports/
+tests/
+backend/
+frontend/build-reports/
