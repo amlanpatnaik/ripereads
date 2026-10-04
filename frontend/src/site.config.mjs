@@ -2,7 +2,7 @@ const config = {
   name: "Ripe Reads",
   tagline: "Is this book ripe for my kid yet?",
   url: "https://ripereads.example",
-  author: "The Ripe Reads desk",
+  author: "Abbey Adair",
   affiliates: { bookshop: "", amazon: "" },
   contactEmail: "",
 };

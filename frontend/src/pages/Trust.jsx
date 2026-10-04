@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Page } from "../components/Page";
 import { SIGNALS, AGE_BANDS, GRADES } from "../data/rubric.mjs";
 import { books } from "../data/books.mjs";
+import { corrections } from "../data/corrections.mjs";
 import { readStats, routes } from "../lib/links.mjs";
 import { H2 } from "../lib/text.mjs";
 import { bandBySlug, signalTotal } from "../data/rubric.mjs";
@@ -54,7 +55,9 @@ export function Corrections() {
       <h2>Open review</h2>
       <p>All {books.length} seed titles are flagged for an owner verification pass. Rubric scores and notes on these pages are provisional and marked as such on <Link to="/shelf/">the shelf</Link>.</p>
       <h2>Log</h2>
-      <p className="mono" style={{ color: "var(--ink-faint)" }} data-testid="corrections-empty">No corrections logged yet.</p>
+      {corrections.length ? (
+        <ul style={{ paddingLeft: "1.2rem" }} data-testid="corrections-list">{corrections.map((c, i) => <li key={i}><span className="mono">{c.date}</span> — {c.book ? <Link to={`/books/${c.book}/`}>{c.book}</Link> : "site"}: {c.what}{c.credit ? ` (credit: ${c.credit})` : ""}</li>)}</ul>
+      ) : <p className="mono" style={{ color: "var(--ink-faint)" }} data-testid="corrections-empty">No corrections logged yet.</p>}
       <p>Spotted something? Use the <Link to="/disagree/">disagreement form</Link>.</p>
     </Page>
   );

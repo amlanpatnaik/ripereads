@@ -19,7 +19,8 @@ Static-first content/reference site: first-person age-readiness ("ripeness") rat
 - `site.config.mjs` (not .json — Node ESM/JSON import attribute incompatibility with CRA babel).
 
 ## Implemented (2026-06)
-- Phases 1–9 of the build plan. Validator green except the 4 intentional /about/ SLOTs.
+- Phases 1–9 of the build plan. Validator green except the intentional /about/ markers.
+- About page: Abbey Adair copy (4 H2s, "What I won't do" folded into section 3), live sidebar counters, Person + AboutPage JSON-LD; Review.author on every book page now resolves to the Person @id. 3 `[[FILL]]` markers remain (day job, degree, email) — validator red until filled. `data/corrections.mjs` drives the corrections log + counter.
 - Footer read counter computed (0/15).
 
 ## Known limitations / backlog

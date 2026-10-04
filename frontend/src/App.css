@@ -3,6 +3,7 @@
 .book-aside { display: grid; gap: 1.5rem; grid-template-columns: 1fr; align-items: start; }
 .book-aside .cover-box { max-width: 200px; }
 .vibe-layout { display: grid; gap: 2.5rem; grid-template-columns: 1fr; align-items: start; }
+.about-layout { display: grid; gap: 2.5rem; grid-template-columns: 1fr; align-items: start; }
 
 @media (min-width: 900px) {
   .home-hero-grid { grid-template-columns: 1.2fr 1fr; }
@@ -10,4 +11,5 @@
   .book-layout { grid-template-columns: minmax(280px, 360px) 1fr; }
   .book-aside .cover-box { max-width: 240px; }
   .vibe-layout { grid-template-columns: 1fr 320px; }
+  .about-layout { grid-template-columns: 1fr 280px; }
 }

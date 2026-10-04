@@ -13,7 +13,7 @@ const warnings = [];
 const fail = (m) => errors.push(m);
 
 const UNMARKED_SCANNER = /\bI read\b|\bmy daughter\b|\bpage \d+|\bchapter \d+/i;
-const SLOT = /\[\[SLOT[^\]]*\]\]/g;
+const SLOT = /\[\[(SLOT|FILL)[^\]]*\]\]/g;
 const COMMERCIAL = /bookshop\.org|amazon\.|amzn\./i;
 
 const prose = (b) => [b.verdict, b.summary, b.ripeFor, b.publisherNote, b.seriesNote, b.sourcesNote, ...SIGNALS.map((s) => b.signals[s.key].note), b.challengedNote || ""].join("\n");
@@ -49,9 +49,9 @@ const scanDir = (dir, cb) => { for (const f of fs.readdirSync(dir, { withFileTyp
 scanDir(path.join(root, "src"), (p, src) => {
   const rel = path.relative(root, p);
   if (/inappropriate/i.test(src) && !rel.includes("scripts")) fail(`${rel}: uses the word "inappropriate"`);
-  const slots = rel.endsWith("pages/About.jsx") ? (src.match(/<Slot name=/g) || []) : (src.match(SLOT) || []);
+  const slots = rel.endsWith("pages/About.jsx") ? (src.match(/<Fill name=/g) || []) : (src.match(SLOT) || []);
   if (slots.length && !rel.endsWith("pages/About.jsx")) fail(`${rel}: leftover [[SLOT]] markers`);
-  if (rel.endsWith("pages/About.jsx") && slots.length) fail(`about: ${slots.length} [[SLOT]] markers still unfilled (owner action; build stays red by design)`);
+  if (rel.endsWith("pages/About.jsx") && slots.length) fail(`about: ${slots.length} [[FILL]] markers still unfilled (owner action; build stays red by design)`);
   if (rel.endsWith("pages/Challenged.jsx") && (COMMERCIAL.test(src) || /AffiliateLinks|rel="sponsored"/.test(src))) fail(`challenged: commercial link present`);
   if (rel.endsWith("pages/Challenged.jsx") && /inappropriate/i.test(src)) fail("challenged: forbidden word");
   if (/https?:\/\/(www\.)?(bookshop\.org|amazon\.)/i.test(src) && !/rel="sponsored/.test(src)) fail(`${rel}: commercial link without rel="sponsored"`);

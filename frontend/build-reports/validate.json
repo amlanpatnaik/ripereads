@@ -9,7 +9,7 @@
     "warnings": 7
   },
   "errors": [
-    "about: 4 [[SLOT]] markers still unfilled (owner action; build stays red by design)"
+    "about: 3 [[FILL]] markers still unfilled (owner action; build stays red by design)"
   ],
   "warnings": [
     "fourth-wing: only 0 step-up titles available",
