@@ -4,6 +4,6 @@ const config = {
   url: "https://ripereads.example",
   author: "Abbey Adair",
   affiliates: { bookshop: "", amazon: "" },
-  contactEmail: "",
+  contactEmail: "hello@ripereads.com",
 };
 export default config;

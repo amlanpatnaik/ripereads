@@ -20,7 +20,7 @@ Static-first content/reference site: first-person age-readiness ("ripeness") rat
 
 ## Implemented (2026-06)
 - Phases 1–9 of the build plan. Validator green except the intentional /about/ markers.
-- About page: Abbey Adair copy (4 H2s, "What I won't do" folded into section 3), live sidebar counters, Person + AboutPage JSON-LD; Review.author on every book page now resolves to the Person @id. 3 `[[FILL]]` markers remain (day job, degree, email) — validator red until filled. `data/corrections.mjs` drives the corrections log + counter.
+- About page: Abbey Adair copy filled (director of applied AI engineering at a large US tech company; Doctor of Engineering in AI; hello@ripereads.com). No FILL markers remain. **Validator and full `yarn build` are green** (74 pre-rendered routes).
 - Footer read counter computed (0/15).
 
 ## Known limitations / backlog

@@ -5,7 +5,6 @@ import { readStats } from "../lib/links.mjs";
 import { corrections } from "../data/corrections.mjs";
 import config from "../site.config.mjs";
 
-const Fill = ({ name, hint }) => <mark style={{ background: "var(--peach)", padding: "0.1rem 0.4rem", fontFamily: "var(--font-mono)", fontSize: "0.85rem" }} data-testid={`fill-${name}`}>{`[[FILL: ${hint}]]`}</mark>;
 
 const Sidebar = () => {
   const s = readStats();
@@ -51,8 +50,8 @@ export default function About() {
             <h2 id="bring">What I bring, and what I don't</h2>
             <h3>What I bring.</h3>
             <p>I've read the books. Several hundred of them, and I mark which ones so you know when I'm speaking from the page and when I'm not.</p>
-            <p>I spend my working life building systems that turn messy information into something people can actually make decisions with. <Fill name="day-job" hint="one plain phrase for the day job, no employer name" /> That's most of what this site is: the same questions asked about every book, scored the same way, so that a "3" means the same thing on page four hundred as it did on page one. The whole rubric is published at <Link to="/method/">the method page</Link>. You can check my work.</p>
-            <p>I have <Fill name="degree" hint="degree, e.g. a master's in information systems" />, which matters less than the reading but explains why I built a framework instead of just posting opinions.</p>
+            <p>I spend my working life building systems that turn messy information into something people can actually make decisions with. I'm a director of applied AI engineering at a large technology company in the United States. That's most of what this site is: the same questions asked about every book, scored the same way, so that a "3" means the same thing on page four hundred as it did on page one. The whole rubric is published at <Link to="/method/">the method page</Link>. You can check my work.</p>
+            <p>I have a Doctor of Engineering in artificial intelligence, which matters less than the reading but explains why I built a framework instead of just posting opinions.</p>
             <p>And I have a kid in the middle of this, right now. Every verdict here is one I've had to make for real, usually under time pressure, usually in a bookstore.</p>
             <h3>What I don't.</h3>
             <p>I'm not a librarian. I'm not a teacher. I don't have a degree in children's literature and I've never sat on an awards committee. Where professional reviewers know more than me, I say so and cite them.</p>
@@ -65,9 +64,8 @@ export default function About() {
             <p>I won't pretend to be neutral about reading itself. I think kids should read widely, including things that unsettle them, and I think the conversation afterward is worth more than the gatekeeping beforehand. Knowing what's in a book is how you get ready for that conversation — not how you avoid it.</p>
 
             <h2 id="reach">How to reach me</h2>
-            <p>If I got something wrong, if you read a book differently than I did, or if there's a title you want covered — <Fill name="email" hint="email, e.g. hello@ripereads.com" />.</p>
+            <p>If I got something wrong, if you read a book differently than I did, or if there's a title you want covered — <a href="mailto:hello@ripereads.com" data-testid="about-email">hello@ripereads.com</a>.</p>
             <p>I read everything and I answer most of it. Corrections go to the front of the queue.</p>
-            <p className="mono" style={{ color: "var(--ink-faint)" }}>The highlighted markers are intentional. The build check stays red until the owner replaces them with real text.</p>
           </article>
           <Sidebar />
         </div>

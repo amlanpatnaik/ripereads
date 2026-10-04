@@ -5,12 +5,10 @@
     "routes": 74,
     "ageBands": 5,
     "grades": 3,
-    "errors": 1,
+    "errors": 0,
     "warnings": 7
   },
-  "errors": [
-    "about: 3 [[FILL]] markers still unfilled (owner action; build stays red by design)"
-  ],
+  "errors": [],
   "warnings": [
     "fourth-wing: only 0 step-up titles available",
     "divine-rivals: only 1 step-down titles available",
