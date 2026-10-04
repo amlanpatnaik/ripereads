@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import config from "../site.config.mjs";
 import { readStats } from "../lib/links.mjs";
 
-const nav = [["/find/", "Find"], ["/ages/", "Ages"], ["/lists/", "Vibes"], ["/series/", "Series"], ["/challenged/", "Challenged"], ["/method/", "Method"], ["/shelf/", "Shelf"]];
+const nav = [["/find/", "Find"], ["/ages/", "Ages"], ["/lists/", "Vibes"], ["/series/", "Series"], ["/bookish-life/", "Bookish Life"], ["/challenged/", "Challenged"], ["/method/", "Method"], ["/shelf/", "Shelf"]];
 
 export default function Layout() {
   const { pathname } = useLocation();

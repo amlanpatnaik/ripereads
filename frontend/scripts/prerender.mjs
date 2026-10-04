@@ -4,9 +4,10 @@ import { fileURLToPath } from "node:url";
 import config from "../src/site.config.mjs";
 import { books } from "../src/data/books.mjs";
 import { vibes } from "../src/data/vibes.mjs";
+import { bookishLife } from "../src/data/bookishLife.mjs";
 import { AGE_BANDS, GRADES, bandBySlug } from "../src/data/rubric.mjs";
 import { allRoutes, routes, seriesList, bookPageText } from "../src/lib/links.mjs";
-import { bookJsonLd, bookMeta } from "../src/lib/seo.mjs";
+import { bookJsonLd, bookMeta, bookishLifeJsonLd } from "../src/lib/seo.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const build = path.join(root, "build");
@@ -26,6 +27,8 @@ const metaFor = (route) => {
   if (series) return { title: `${series.name}: does the series grow up? · ${config.name}`, description: `Maturity drift across ${series.name}, book by book.`, canonical: `${config.url}${route}`, image: `${config.url}/og/site/`, body: series.name };
   const rn = books.find((b) => routes.readNext(b) === route);
   if (rn) return { title: `What to read after ${rn.title} · ${config.name}`, description: `Step-down and step-up picks after ${rn.title}, by age band.`, canonical: `${config.url}${route}`, image: `${config.url}/og/site/`, body: rn.title };
+  const post = bookishLife.find((p) => routes.bookishLife(p) === route);
+  if (post) return { title: `${post.title} · ${config.name}`, description: post.metaDescription, canonical: `${config.url}${route}`, image: `${config.url}${post.heroImage.src}`, jsonld: bookishLifeJsonLd(post), body: [post.title, post.intro, post.method, ...post.sections.flatMap((s) => [s.heading, s.lead, ...s.candles.map((c) => `${c.name}: ${c.notes}. ${c.blurb}`)]), "Quick answers.", ...post.faqs.map((f) => `${f.q} ${f.a}`), post.closing.heading, post.closing.body].join("\n") };
   const name = route === "/" ? config.tagline : route.replaceAll("/", " ").trim().replace(/-/g, " ");
   return { title: `${name} · ${config.name}`, description: config.tagline, canonical: `${config.url}${route}`, image: `${config.url}/og/site/`, body: name };
 };
@@ -41,7 +44,7 @@ for (const route of allRoutes()) {
     `<meta property="og:description" content="${esc(m.description)}"/>`,
     `<meta property="og:url" content="${esc(m.canonical)}"/>`,
     `<meta property="og:image" content="${esc(m.image)}"/>`,
-    `<meta property="og:type" content="${route.startsWith("/books/") ? "article" : "website"}"/>`,
+    `<meta property="og:type" content="${route.startsWith("/books/") || route.startsWith("/bookish-life/") ? "article" : "website"}"/>`,
     `<meta name="twitter:card" content="summary_large_image"/>`,
     ...(m.jsonld || []).map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</script>`),
   ].join("");

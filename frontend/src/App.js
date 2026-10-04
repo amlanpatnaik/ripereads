@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Book from "./pages/Book";
 import { AgesIndex, AgeHub, GradesIndex, GradeHub, SeriesIndex, SeriesHub } from "./pages/Hubs";
 import { Lists, Vibe, ReadNextIndex, ReadNext } from "./pages/Lists";
+import { BookishLifeIndex, BookishLifePost } from "./pages/BookishLife";
 import Challenged from "./pages/Challenged";
 import About from "./pages/About";
 import { Method, Shelf, Corrections, EditorialPolicy } from "./pages/Trust";
@@ -33,6 +34,8 @@ export default function App() {
           <Route path="/read-next/:slug" element={<ReadNext />} />
           <Route path="/lists" element={<Lists />} />
           <Route path="/vibes/:slug" element={<Vibe />} />
+          <Route path="/bookish-life" element={<BookishLifeIndex />} />
+          <Route path="/bookish-life/:slug" element={<BookishLifePost />} />
           <Route path="/challenged" element={<Challenged />} />
           <Route path="/about" element={<About />} />
           <Route path="/method" element={<Method />} />

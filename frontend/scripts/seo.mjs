@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import config from "../src/site.config.mjs";
 import { books } from "../src/data/books.mjs";
 import { vibes } from "../src/data/vibes.mjs";
+import { bookishLife } from "../src/data/bookishLife.mjs";
 import { SIGNALS, AGE_BANDS, GRADES, bandBySlug, signalTotal } from "../src/data/rubric.mjs";
 import { allRoutes, routes, seriesList } from "../src/lib/links.mjs";
 import { H2 } from "../src/lib/text.mjs";
@@ -34,6 +35,7 @@ const llms = [
   "## Book page structure", "Every book page has these ten sections in order: " + Object.values(H2).join(" · "), "",
   "## Books", ...books.map((b) => `- [${b.title} by ${b.author}](${abs(routes.book(b))}): ripe at ${bandBySlug(b.ageBand).stamp}, signals ${signalTotal(b)}/20, status ${b.readStatus}. ${b.verdict}`), "",
   "## Vibes lists", ...vibes.map((v) => `- [${v.title}](${abs(routes.vibe(v))}): ${v.books.length} titles`), "",
+  "## Bookish life", ...bookishLife.map((p) => `- [${p.title}](${abs(routes.bookishLife(p))}): ${p.metaDescription}`), "",
   "## Series", ...seriesList().map((s) => `- [${s.name}](${abs(routes.series(s.slug))})`), "",
   "## Trust pages", `- ${abs("/method/")} — full method`, `- ${abs("/editorial-policy/")} — editorial and affiliate policy`, `- ${abs("/corrections/")} — corrections log`, `- ${abs("/shelf/")} — what I have and have not read`, `- ${abs("/challenged/")} — challenged books, no commercial links`, "",
 ].join("\n");

@@ -112,6 +112,9 @@ Every book page has these ten sections in order: The short version · What it's 
 - [Myth and fairy-tale retellings](https://ripereads.example/vibes/myth-retellings/): 10 titles
 - [Series that grow up with the reader](https://ripereads.example/vibes/series-that-grow-up/): 7 titles
 
+## Bookish life
+- [The Best Candle for Every Book You Love: A Scent Guide by Series](https://ripereads.example/bookish-life/the-best-candle-for-every-book-you-love/): A scent guide pairing real soy candles to Fourth Wing, ACOTAR, Harry Potter, Twilight and more — matched by mood, not official license.
+
 ## Series
 - [The Empyrean](https://ripereads.example/series/the-empyrean/)
 - [A Court of Thorns and Roses](https://ripereads.example/series/a-court-of-thorns-and-roses/)

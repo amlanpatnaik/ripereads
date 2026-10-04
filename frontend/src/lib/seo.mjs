@@ -30,3 +30,16 @@ export const bookMeta = (book) => {
 };
 
 export const pageMeta = (path, title, description) => ({ title: `${title} · ${config.name}`, description, canonical: abs(path), image: abs("/og/site/") });
+
+export const bookishLifeJsonLd = (post) => {
+  const url = abs(routes.bookishLife(post));
+  return [
+    { "@context": "https://schema.org", "@type": "BlogPosting", headline: post.title, description: post.metaDescription, author: { "@type": "Person", "@id": `${config.url}/about/#abbey`, name: config.author, url: `${config.url}/about/` }, publisher: { "@type": "Organization", name: config.name }, mainEntityOfPage: url, url, image: post.heroImage.src },
+    { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: post.faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: abs("/") },
+      { "@type": "ListItem", position: 2, name: "The Bookish Life", item: abs("/bookish-life/") },
+      { "@type": "ListItem", position: 3, name: post.title, item: url },
+    ] },
+  ];
+};

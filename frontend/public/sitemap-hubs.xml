@@ -14,6 +14,7 @@
   <url><loc>https://ripereads.example/ages/</loc></url>
   <url><loc>https://ripereads.example/grades/</loc></url>
   <url><loc>https://ripereads.example/series/</loc></url>
+  <url><loc>https://ripereads.example/bookish-life/</loc></url>
   <url><loc>https://ripereads.example/ages/10-12/</loc></url>
   <url><loc>https://ripereads.example/ages/12-14/</loc></url>
   <url><loc>https://ripereads.example/ages/14-16/</loc></url>
@@ -79,4 +80,5 @@
   <url><loc>https://ripereads.example/series/fae-and-alchemy/</loc></url>
   <url><loc>https://ripereads.example/series/crowns-of-nyaxia/</loc></url>
   <url><loc>https://ripereads.example/series/alex-stern/</loc></url>
+  <url><loc>https://ripereads.example/bookish-life/the-best-candle-for-every-book-you-love/</loc></url>
 </urlset>

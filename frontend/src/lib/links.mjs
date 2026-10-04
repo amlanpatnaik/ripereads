@@ -1,5 +1,6 @@
 import { books } from "../data/books.mjs";
 import { vibes } from "../data/vibes.mjs";
+import { bookishLife } from "../data/bookishLife.mjs";
 import { AGE_BANDS, GRADES, SIGNALS, bandIndex, bandBySlug, gradeBySlug, signalTotal } from "../data/rubric.mjs";
 import { H2 } from "./text.mjs";
 
@@ -10,6 +11,7 @@ export const routes = {
   series: (slug) => `/series/${slug}/`,
   readNext: (b) => `/read-next/${b.slug}/`,
   vibe: (v) => `/vibes/${v.slug}/`,
+  bookishLife: (p) => `/bookish-life/${p.slug}/`,
 };
 
 const rank = (b) => bandIndex(b.ageBand) * 100 + signalTotal(b);
@@ -36,13 +38,14 @@ export const readStats = () => {
 };
 
 export const allRoutes = () => [
-  "/", "/about/", "/method/", "/shelf/", "/corrections/", "/editorial-policy/", "/find/", "/quiz/", "/disagree/", "/challenged/", "/lists/", "/ages/", "/grades/", "/series/", "/read-next/",
+  "/", "/about/", "/method/", "/shelf/", "/corrections/", "/editorial-policy/", "/find/", "/quiz/", "/disagree/", "/challenged/", "/lists/", "/ages/", "/grades/", "/series/", "/read-next/", "/bookish-life/",
   ...books.map(routes.book),
   ...books.map(routes.readNext),
   ...AGE_BANDS.map((a) => routes.age(a.slug)),
   ...GRADES.map((g) => routes.grade(g.slug)),
   ...seriesList().map((s) => routes.series(s.slug)),
   ...vibes.map(routes.vibe),
+  ...bookishLife.map(routes.bookishLife),
 ];
 
 export const outboundLinks = (book) => [
