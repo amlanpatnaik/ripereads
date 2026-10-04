@@ -23,6 +23,8 @@ Static-first content/reference site: first-person age-readiness ("ripeness") rat
 - About page: Abbey Adair copy filled (director of applied AI engineering at a large US tech company; Doctor of Engineering in AI; hello@ripereads.com). No FILL markers remain. **Validator and full `yarn build` are green** (74 pre-rendered routes).
 - Footer read counter computed (0/15).
 
+- 2026-06 expansion: 65 books (10/15/12/5/8 across bands), 16 vibes incl. search-intent lists (books-like-fourth-wing, books-like-acotar, after-percy-jackson, after-harry-potter, after-the-hunger-games, series-that-grow-up…). Visible Quick-answers FAQ on every book page mirrored in FAQPage JSON-LD. Meta descriptions lead with "Is X appropriate for your kid?". Chrome restyled per uploaded fable.md (forest green bands, sky-blue vibes band, pill CTAs). Data helper `data/mk.mjs`.
+
 ## Known limitations / backlog
 - P0: Owner fills 4 /about/ SLOTs; verification pass on 15 provisional ratings.
 - P1: Affiliate IDs in site.config.mjs; wire quiz/disagree capture (FastAPI+Mongo or email).
