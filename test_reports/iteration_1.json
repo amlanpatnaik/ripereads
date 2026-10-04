@@ -1,0 +1,51 @@
+{
+  "summary": "Frontend-only testing of Ripe Reads static site. Ran a comprehensive Playwright suite covering home, book pages (Fourth Wing + ACOTAR), hubs (/ages, /grades, /series, /read-next), lists & vibes, challenged, trust pages (/about, /method, /shelf, /corrections, /editorial-policy), find tool, quiz stub, disagree stub, card routes (/og, /pin), 404, mobile responsiveness at 390px, primary nav links, and static SEO files (robots.txt, sitemap*.xml, llms.txt). 68 UI assertions executed. Only two real functional issues found; most apparent 'failures' were case-sensitivity in test string matches (UI uses CSS text-transform: uppercase, so DOM text matches the spec semantically).",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "CardPage (/og/:slug and /pin/:slug)", "issue": "Runtime error: 'Helmet expects a string as a child of <title>'. The <title> in CardPage.jsx line 31 passes multiple children ({isOg ? 'OG card' : 'Pin'} · {book.title}) which react-helmet-async rejects, causing an Emergent runtime error overlay and the entire card page not to render (og-page, og-card, og-download, pin-page, pin-card all missing from DOM).", "selector": "data-testid=og-page / pin-page / og-card / pin-card / og-download", "priority": "CRITICAL"},
+      {"component": "ReadNextIndex (/read-next/)", "issue": "Spec says '/read-next/ ... read-next-page' testid, but the index page does not render a data-testid='read-next-page' wrapper (only the /read-next/:slug detail page has it). It renders a list of read-next-link-<slug> items (15 of them). Either add read-next-page testid to index, or update spec.", "selector": "data-testid=read-next-page", "priority": "LOW"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Global", "issues": ["Multiple strings (age stamp, read status, footer counter, find count, quiz Noted button, etc.) are rendered via CSS text-transform: uppercase. Spec strings are given in sentence case ('Ripe at 18+', 'Read by me: 0/15', 'Not yet read by me', 'X of 15 titles', 'Noted (stub)'). DOM text equals the uppercase form. Content strings in source match the spec, so this is cosmetic only — but any downstream consumer doing case-sensitive matching should use case-insensitive compare."]}
+    ]
+  },
+  "console_errors": [
+    "pageerror on /og/:slug and /pin/:slug: 'Helmet expects a string as a child of <title>. Did you forget to wrap your children in braces? ( <title>{``}</title> )' — crashes the route."
+  ],
+  "test_report_links": ["/app/test_reports/iteration_1.json"],
+  "action_items": [
+    "Fix CardPage.jsx line 31: wrap the <title> children as a single string, e.g. <title>{`${isOg ? 'OG card' : 'Pin'} · ${book.title}`}</title>. This will restore /og/<slug>/ and /pin/<slug>/ including og-card, pin-card, og-download testids and remove the runtime error overlay.",
+    "Decide whether /read-next/ index should expose data-testid='read-next-page' or if the spec should only require it on the detail page."
+  ],
+  "critical_code_review_comments": [
+    "CardPage.jsx <title> uses JSX with multiple children, incompatible with react-helmet-async — always concatenate to a single string child inside <title>.",
+    "All lift/affiliate rel attributes correctly include 'sponsored noopener'. Breadcrumbs, cover fallbacks, and challenged-page affiliate suppression work as specified.",
+    "Static assets (robots.txt with GPTBot + Sitemap, sitemap.xml sitemapindex with 3 entries, sitemap-books.xml with 15 <url>, llms.txt with '## The rubric' and 15 book lines) all verified."
+  ],
+  "verified_items": [
+    "Home: hero, ripeness-card-fourth-wing with 'Ripe at 18+' stamp, 5 home-band tiles, 6 home-vibe tiles, 15 grid-* books, footer 'Read by me: 0/15'.",
+    "/books/a-court-of-thorns-and-roses/: exactly 10 H2s in the specified order, 4 JSON-LD scripts, 'Not yet read by me' chip, NO affiliate-links, 'On the challenged list' chip, cover image present.",
+    "/books/fourth-wing/: affiliate-links with buy-bookshop and buy-amazon anchors (rel contains 'sponsored'), section-step-down present, section-step-up contains 'Nothing on the shelf sits above', list-link-* present, breadcrumb to /ages/18-plus/.",
+    "Hubs: /ages/ (ages-index + 5 sections), /ages/14-16/ (age-hub), /grades/high-school/ (grade-hub), /series/ (series-index), /series/a-court-of-thorns-and-roses/ (maturity-drift), /read-next/six-of-crows/ (read-next-page with 'A step gentler' and 'A step up').",
+    "/lists/ shows 6 vibe sections (via lists-link-<slug>); /vibes/slow-burn-low-heat/ has vibe-list, row-band-*, row-signal-*, and vibe-pin svg aside.",
+    "/challenged/: challenged-a-court-of-thorns-and-roses present; page has NO bookshop.org or amazon anchors.",
+    "Trust: /about/ shows all 4 slot-* marks (slot-name-and-role, slot-origin-story, slot-credentials-and-limits, slot-contact); /method/ has 5 method-signal-*; /shelf/ shelf-ratio '0/15' and 15 items in shelf-unmarked; /corrections/ and /editorial-policy/ render.",
+    "Find: 'bardugo' → 2 of 15; band 12-14 → 4 of 15; romance max 1 excludes Fourth Wing/ACOTAR/Serpent & Dove/Atlas Six; impossible search shows find-empty.",
+    "Quiz: selecting quiz-age-12, quiz-romance-1, quiz-violence-2, quiz-themes-2 renders quiz-results; submitting quiz-capture-form flips button text to 'Noted (stub)'.",
+    "Disagree: all three fields + submit shows disagree-success.",
+    "/nope/ renders not-found page.",
+    "Mobile 390px on /books/fourth-wing/: no horizontal overflow (max element right edge == innerWidth).",
+    "Primary nav links (nav-find, nav-ages, nav-vibes→/lists/, nav-series, nav-challenged, nav-method, nav-shelf) all have correct hrefs.",
+    "Static SEO: /robots.txt contains 'GPTBot' and Sitemap line; /sitemap.xml is sitemapindex with 3 sitemaps; /sitemap-books.xml has 15 <url>; /llms.txt contains '## The rubric' and 15 book entries."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A", "frontend": "~97% (65/67 real assertions, excluding case-sensitivity false positives)"},
+  "test_credentials": "none required",
+  "seed_data_creation": "none",
+  "retest_needed": true,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Only two issues to retest after fix: (1) /og/<slug>/ and /pin/<slug>/ render without the Helmet runtime error and expose og-card, og-download, pin-card, og-page, pin-page testids; (2) optional read-next-page testid on /read-next/ index. All other spec items verified passing. The site uses CSS text-transform: uppercase on many labels — use case-insensitive string checks when asserting user-visible text.",
+  "rca of the issue": "In /app/frontend/src/pages/CardPage.jsx line 31, react-helmet-async's <title> element only accepts a single string child. The current JSX passes an interpolated expression + plain text + another interpolation as three children, which throws 'Helmet expects a string as a child of <title>'. This bubbles up and triggers the Emergent runtime-error overlay for /og/:slug and /pin/:slug, blocking the SVG card render. Fix: replace with <title>{`${isOg ? 'OG card' : 'Pin'} · ${book.title}`}</title>. Reproduction: open https://book-ripeness.preview.emergentagent.com/og/fourth-wing/ — runtime error overlay appears, body is empty."
+}

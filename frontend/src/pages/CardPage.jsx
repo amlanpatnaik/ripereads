@@ -28,7 +28,7 @@ export default function CardPage({ kind }) {
   const [w, h] = isOg ? [1200, 630] : [1000, 1500];
   return (
     <div className="wrap" style={{ padding: "2rem 0 4rem" }} data-testid={`${kind}-page`}>
-      <Helmet><meta name="robots" content="noindex" /><title>{isOg ? "OG card" : "Pin"} · {book.title}</title></Helmet>
+      <Helmet><meta name="robots" content="noindex" /><title>{`${isOg ? "OG card" : "Pin"} · ${book.title}`}</title></Helmet>
       <p className="mono" style={{ color: "var(--ink-faint)" }}>{isOg ? "Open Graph card · 1200×630" : "Pinterest pin · 1000×1500"} · generated from data</p>
       <div ref={ref} style={{ maxWidth: isOg ? 900 : 420, border: "1px solid var(--rule)" }}>{isOg ? <OgCard book={book} /> : <PinCard book={book} />}</div>
       <button className="btn" style={{ marginTop: "1rem" }} onClick={() => download(ref, w, h, `${book.slug}-${kind}.png`)} data-testid={`${kind}-download`}>Download PNG</button>

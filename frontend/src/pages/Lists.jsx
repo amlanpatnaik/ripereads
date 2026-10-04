@@ -47,7 +47,7 @@ export function Vibe() {
 
 export function ReadNextIndex() {
   return (
-    <Page path="/read-next/" eyebrow="Pillar · read next" title="What to read after…" intro="Pick the book they just finished. I show three titles a step gentler and three a step up, by my scale." testid="read-next-index">
+    <Page path="/read-next/" eyebrow="Pillar · read next" title="What to read after…" intro="Pick the book they just finished. I show three titles a step gentler and three a step up, by my scale." testid="read-next-page">
       <ul style={{ paddingLeft: "1.2rem", columns: "2 14rem" }}>
         {books.map((b) => <li key={b.slug}><Link to={routes.readNext(b)} data-testid={`read-next-link-${b.slug}`}>After {b.title}</Link></li>)}
       </ul>
