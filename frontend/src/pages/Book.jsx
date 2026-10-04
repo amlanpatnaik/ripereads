@@ -44,7 +44,7 @@ export default function Book() {
             <p className="mono" style={{ color: "var(--ink-faint)" }}>{book.series ? `${book.series.name} · book ${book.series.index}` : "Standalone"} · {book.year}</p>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", margin: "0 0 0.4rem" }} data-testid="book-title">{book.title}</h1>
             <p style={{ color: "var(--ink-soft)", fontSize: "1.1rem" }}>by {book.author}</p>
-            <p className="chip" data-testid="read-status">{isRead ? "Read by me" : "Not yet read by me · rated from the record"}</p>
+            <p className="chip" data-testid="read-status">{isRead ? "Read by me · rated from the record" : "Not yet read by me · rated from the record"}</p>
 
             <Section id="short" title={H2.short}>
               <p data-testid="verdict" style={{ fontSize: "1.15rem" }}>{book.verdict}</p>

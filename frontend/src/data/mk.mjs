@@ -2,7 +2,7 @@ const ol = (q) => ({ label: "Open Library record", url: `https://openlibrary.org
 const K = ["romance", "violence", "language", "substances", "themes"];
 
 export const mk = (b) => ({
-  publisher: null, publisherAge: null, isbn: null, pages: null, readStatus: "unmarked", challenged: false,
+  publisher: null, publisherAge: null, isbn: null, pages: null, readStatus: "read", challenged: false,
   ...b,
   signals: Object.fromEntries(K.map((k, i) => [k, { score: b.sig[i][0], note: b.sig[i][1] }])),
   sources: [ol(`${b.title} ${b.author}`), ...(b.sources || [])],
