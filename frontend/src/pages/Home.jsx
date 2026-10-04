@@ -22,8 +22,8 @@ export default function Home() {
             <h1 style={{ color: "var(--paper)", fontSize: "clamp(2.4rem, 6vw, 4.2rem)", margin: "0 0 1.25rem", maxWidth: "14ch" }}>Is this book ripe for your kid yet?</h1>
             <p style={{ color: "var(--paper-deep)", maxWidth: "52ch", fontSize: "1.1rem" }}>One reader, five signals, a plain age stamp. I say what the publisher says, what the book actually contains, and where I would draw the line. When I have not read a title myself, the page says so.</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem", marginTop: "1.5rem" }}>
-              <Link to="/find/" className="btn" style={{ borderColor: "var(--gold)", color: "var(--paper)" }} data-testid="hero-find">Find a book</Link>
-              <Link to="/quiz/" className="btn" style={{ borderColor: "var(--paper-deep)", color: "var(--paper)" }} data-testid="hero-quiz">Take the ripeness quiz</Link>
+              <Link to="/find/" className="btn btn-paper" data-testid="hero-find">Find a book</Link>
+              <Link to="/quiz/" className="btn" style={{ borderColor: "var(--paper)", color: "var(--paper)" }} data-testid="hero-quiz">Take the ripeness quiz</Link>
             </div>
             <p className="mono" style={{ color: "var(--orchard-soft)", marginTop: "1.5rem" }}>{stats.total} titles rated · {stats.read} read by me · everything else rated from the record</p>
           </div>
@@ -44,16 +44,20 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="wrap" style={{ padding: "2rem 0" }}>
-        <h2 style={{ margin: "0 0 1rem" }}>Vibes, with the age band beside every title</h2>
-        <ul style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "1rem", padding: 0, listStyle: "none" }}>
-          {vibes.map((v) => (
-            <li key={v.slug}><Link to={routes.vibe(v)} className="lift" style={{ display: "block", padding: "1.25rem", border: "1px solid var(--rule)", borderRadius: 6, background: "var(--card-paper)", textDecoration: "none", height: "100%" }} data-testid={`home-vibe-${v.slug}`}>
-              <span className="display" style={{ fontSize: "1.2rem", lineHeight: 1.2, display: "block" }}>{v.title}</span>
-              <span className="mono" style={{ display: "block", color: "var(--ink-faint)", marginTop: "0.5rem" }}>{v.books.length} titles</span>
-            </Link></li>
-          ))}
-        </ul>
+      <section className="band-sky" data-testid="home-vibes-band">
+        <div className="wrap" style={{ padding: "3.5rem 0" }}>
+          <p className="mono" style={{ color: "var(--ink)", opacity: 0.7 }}>The questions parents actually search</p>
+          <h2 style={{ margin: "0 0 0.5rem", fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)" }}>Books like Fourth Wing, after Percy Jackson, series that grow up</h2>
+          <p className="reading" style={{ color: "var(--ink)", opacity: 0.85 }}>Every list shows the age band and loudest signal beside each title, so the answer is visible before you click.</p>
+          <ul style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "1rem", padding: 0, listStyle: "none", marginTop: "1.5rem" }}>
+            {vibes.map((v) => (
+              <li key={v.slug}><Link to={routes.vibe(v)} className="lift vibe-tile" style={{ display: "block", padding: "1.25rem", borderRadius: 12, textDecoration: "none", height: "100%" }} data-testid={`home-vibe-${v.slug}`}>
+                <span className="display" style={{ fontSize: "1.15rem", lineHeight: 1.2, display: "block" }}>{v.title}</span>
+                <span className="mono" style={{ display: "block", color: "var(--ink-faint)", marginTop: "0.5rem" }}>{v.books.length} titles</span>
+              </Link></li>
+            ))}
+          </ul>
+        </div>
       </section>
 
       <section className="wrap" style={{ padding: "2rem 0 4rem" }}>

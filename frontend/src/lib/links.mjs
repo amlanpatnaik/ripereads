@@ -79,12 +79,21 @@ export const listsText = (book) => {
   return v.length ? `${book.title} appears on ${v.length} of my vibes lists: ${v.map((x) => x.title).join("; ")}.` : "";
 };
 
+export const quickAnswers = (book) => {
+  const band = bandBySlug(book.ageBand);
+  return [
+    [`What age is ${book.title} appropriate for?`, `I rate it ripe at ${band.stamp}, band ${band.label}. ${book.publisherAge ? `The publisher says ${book.publisherAge}.` : "No publisher age statement verified."}`],
+    ...SIGNALS.map((s) => [`How much ${s.label.toLowerCase()} is in ${book.title}?`, `${book.signals[s.key].score} of 4: ${s.scale[book.signals[s.key].score]}.`]),
+    [`Has Ripe Reads read ${book.title}?`, book.readStatus === "read" ? "Yes, cover to cover." : "Not yet; this rating is from the publisher record, trade reviews and consistent reader reports."],
+  ];
+};
+
 export const bookPageText = (book) => {
   const band = bandBySlug(book.ageBand);
   const grade = gradeBySlug(book.grade);
   return [
     `${book.title} by ${book.author}. Ripe at ${band.stamp}. ${book.readStatus === "read" ? "Read by me." : "Not yet read by me; rated from the record."}`,
-    H2.short, book.verdict,
+    H2.short, book.verdict, "Quick answers.", ...quickAnswers(book).map((q) => `${q[0]} ${q[1]}`),
     H2.about, book.summary,
     H2.signals, `Total ${signalTotal(book)} of 20 across five signals.`, signalText(book),
     H2.ripeFor, `My band is ${band.label}, ${grade.label} (${grade.detail}).`, book.ripeFor,

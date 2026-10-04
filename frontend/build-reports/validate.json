@@ -1,21 +1,22 @@
 {
   "summary": {
-    "books": 15,
-    "vibes": 6,
-    "routes": 74,
+    "books": 65,
+    "vibes": 16,
+    "routes": 226,
     "ageBands": 5,
     "grades": 3,
     "errors": 0,
-    "warnings": 7
+    "warnings": 8
   },
   "errors": [],
   "warnings": [
-    "fourth-wing: only 0 step-up titles available",
-    "divine-rivals: only 1 step-down titles available",
-    "shadow-and-bone: only 2 step-down titles available",
-    "caraval: only 2 step-down titles available",
-    "serpent-and-dove: only 1 step-up titles available",
-    "the-atlas-six: only 2 step-up titles available",
-    "lightlark: only 0 step-down titles available"
+    "harry-potter-and-the-sorcerers-stone: only 0 step-down titles available",
+    "nevermoor: only 0 step-down titles available",
+    "aru-shah-and-the-end-of-time: only 0 step-down titles available",
+    "iron-flame: only 2 step-up titles available",
+    "onyx-storm: only 2 step-up titles available",
+    "crescent-city-house-of-earth-and-blood: only 0 step-up titles available",
+    "the-serpent-and-the-wings-of-night: only 2 step-up titles available",
+    "ninth-house: only 1 step-up titles available"
   ]
 }

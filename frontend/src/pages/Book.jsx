@@ -6,7 +6,7 @@ import { BookRow } from "../components/BookRow";
 import { AffiliateLinks } from "../components/AffiliateLinks";
 import { bookBySlug } from "../data/books.mjs";
 import { SIGNALS, bandBySlug, gradeBySlug, signalTotal } from "../data/rubric.mjs";
-import { routes, stepDown, stepUp, vibesFor, stepText } from "../lib/links.mjs";
+import { routes, stepDown, stepUp, vibesFor, stepText, quickAnswers } from "../lib/links.mjs";
 import { bookJsonLd, bookMeta } from "../lib/seo.mjs";
 import { H2 } from "../lib/text.mjs";
 import NotFound from "./NotFound";
@@ -46,7 +46,13 @@ export default function Book() {
             <p style={{ color: "var(--ink-soft)", fontSize: "1.1rem" }}>by {book.author}</p>
             <p className="chip" data-testid="read-status">{isRead ? "Read by me" : "Not yet read by me · rated from the record"}</p>
 
-            <Section id="short" title={H2.short}><p data-testid="verdict" style={{ fontSize: "1.15rem" }}>{book.verdict}</p></Section>
+            <Section id="short" title={H2.short}>
+              <p data-testid="verdict" style={{ fontSize: "1.15rem" }}>{book.verdict}</p>
+              <h3 style={{ marginTop: "1.25rem" }}>Quick answers</h3>
+              <dl style={{ margin: 0, display: "grid", gap: "0.5rem", fontSize: "0.95rem" }} data-testid="quick-answers">
+                {quickAnswers(book).map(([q, a]) => <div key={q}><dt style={{ fontWeight: 600 }}>{q}</dt><dd style={{ margin: 0, color: "var(--ink-soft)" }}>{a}</dd></div>)}
+              </dl>
+            </Section>
             <Section id="about" title={H2.about}><p>{book.summary}</p></Section>
             <Section id="signals" title={H2.signals}>
               <p className="mono" style={{ color: "var(--ink-faint)" }}>Total {signalTotal(book)} of 20 across five signals</p>
