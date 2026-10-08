@@ -28,7 +28,7 @@ const metaFor = (route) => {
   const rn = books.find((b) => routes.readNext(b) === route);
   if (rn) return { title: `What to read after ${rn.title} · ${config.name}`, description: `Step-down and step-up picks after ${rn.title}, by age band.`, canonical: `${config.url}${route}`, image: `${config.url}/og/site/`, body: rn.title };
   const post = bookishLife.find((p) => routes.bookishLife(p) === route);
-  if (post) return { title: `${post.title} · ${config.name}`, description: post.metaDescription, canonical: `${config.url}${route}`, image: `${config.url}${post.heroImage.src}`, jsonld: bookishLifeJsonLd(post), body: [post.title, post.intro, post.method, ...post.sections.flatMap((s) => [s.heading, s.lead, ...s.candles.map((c) => `${c.name}: ${c.notes}. ${c.blurb}`)]), "Quick answers.", ...post.faqs.map((f) => `${f.q} ${f.a}`), post.closing.heading, post.closing.body].join("\n") };
+  if (post) return { title: `${post.title} · ${config.name}`, description: post.metaDescription, canonical: `${config.url}${route}`, image: `${config.url}${post.heroImage.src}`, jsonld: bookishLifeJsonLd(post), body: [post.title, post.intro, post.method, ...post.sections.flatMap((s) => [s.heading, s.lead, ...(s.books || []).map((b) => `${b.title} by ${b.author} (${b.ageNote}): ${b.blurb}`), ...(s.candles || []).map((c) => `${c.name}: ${c.notes}. ${c.blurb}`)]), "Quick answers.", ...post.faqs.map((f) => `${f.q} ${f.a}`), post.closing.heading, post.closing.body].join("\n") };
   const name = route === "/" ? config.tagline : route.replaceAll("/", " ").trim().replace(/-/g, " ");
   return { title: `${name} · ${config.name}`, description: config.tagline, canonical: `${config.url}${route}`, image: `${config.url}/og/site/`, body: name };
 };

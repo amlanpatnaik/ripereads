@@ -14,25 +14,63 @@ const Credit = ({ credit, creditUrl }) =>
     </p>
   ) : null;
 
-const CandleCard = ({ candle }) => (
+const CandleCard = ({ candle, creditLabel = "Aarka Origins", creditUrl = "https://aarkaorigins.com/collections/book-lovers-soy-candles" }) => (
   <figure style={{ margin: 0, breakInside: "avoid" }} data-testid={`candle-${candle.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>
-    <img src={candle.image.src} alt={candle.image.alt} loading="lazy" style={{ width: "100%", height: "auto", display: "block", borderRadius: "4px" }} />
-    <Credit credit="Aarka Origins" creditUrl="https://aarkaorigins.com/collections/book-lovers-soy-candles" />
+    {candle.url ? (
+      <a href={candle.url} target="_blank" rel="noopener noreferrer">
+        <img src={candle.image.src} alt={candle.image.alt} loading="lazy" style={{ width: "100%", height: "auto", display: "block", borderRadius: "4px" }} />
+      </a>
+    ) : (
+      <img src={candle.image.src} alt={candle.image.alt} loading="lazy" style={{ width: "100%", height: "auto", display: "block", borderRadius: "4px" }} />
+    )}
+    <Credit credit={creditLabel} creditUrl={creditUrl} />
     <figcaption style={{ marginTop: "0.6rem" }}>
-      <p style={{ margin: 0, fontWeight: 600 }}>{candle.name} <span className="mono" style={{ color: "var(--ink-faint)", fontWeight: 400 }}>· {candle.price}</span></p>
+      <p style={{ margin: 0, fontWeight: 600 }}>
+        {candle.url ? <a href={candle.url} target="_blank" rel="noopener noreferrer">{candle.name}</a> : candle.name}{" "}
+        <span className="mono" style={{ color: "var(--ink-faint)", fontWeight: 400 }}>· {candle.price}</span>
+      </p>
       <p className="mono" style={{ color: "var(--ink-soft)", margin: "0.2rem 0 0.4rem" }}>{candle.notes}</p>
+      {candle.rating != null && (
+        <p className="mono" style={{ color: "var(--ink-faint)", margin: "0 0 0.4rem", fontSize: "0.85em" }}>
+          {candle.reviewCount > 0 ? `${candle.rating.toFixed(2)}★ · ${candle.reviewCount} review${candle.reviewCount === 1 ? "" : "s"}` : "No reviews yet"}
+        </p>
+      )}
       <p style={{ margin: 0, color: "var(--ink-soft)" }}>{candle.blurb}</p>
     </figcaption>
   </figure>
 );
 
-const Section = ({ section }) => (
+const BookCard = ({ book }) => (
+  <figure style={{ margin: 0, breakInside: "avoid" }} data-testid={`book-${(book.slug || book.title).toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>
+    <img src={book.cover} alt={book.alt} loading="lazy" style={{ width: "100%", maxWidth: 200, height: "auto", display: "block", borderRadius: "4px", margin: "0 auto" }} />
+    <figcaption style={{ marginTop: "0.6rem" }}>
+      <p style={{ margin: 0, fontWeight: 600 }}>{book.title}</p>
+      <p className="mono" style={{ color: "var(--ink-faint)", margin: "0.15rem 0 0.4rem" }}>{book.author} · {book.ageNote}</p>
+      <p style={{ margin: 0, color: "var(--ink-soft)" }}>{book.blurb}</p>
+    </figcaption>
+  </figure>
+);
+
+const Section = ({ section, creditLabel, creditUrl }) => (
   <section style={{ marginBottom: "3rem" }} data-testid={`section-${section.id}`}>
     <h2>{section.heading}</h2>
     <p className="reading" style={{ color: "var(--ink-soft)" }}>{section.lead}</p>
-    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1.75rem", margin: "1.25rem 0 1.5rem" }}>
-      {section.candles.map((c) => <CandleCard key={c.name} candle={c} />)}
-    </div>
+    {section.books?.length ? (
+      <>
+        <h3 style={{ margin: "1.25rem 0 0.25rem", fontSize: "1rem" }}>{section.booksHeading || "The books"}</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "1.5rem", margin: "0.75rem 0 1.5rem" }}>
+          {section.books.map((b) => <BookCard key={b.title} book={b} />)}
+        </div>
+      </>
+    ) : null}
+    {section.candles?.length ? (
+      <>
+        <h3 style={{ margin: "1.25rem 0 0.25rem", fontSize: "1rem" }}>{section.candlesHeading || "The candle pairing"}</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1.75rem", margin: "0.75rem 0 1.5rem" }}>
+          {section.candles.map((c) => <CandleCard key={c.name} candle={c} creditLabel={creditLabel} creditUrl={creditUrl} />)}
+        </div>
+      </>
+    ) : null}
     {section.linkSlug && bookBySlug(section.linkSlug) && (
       <p style={{ margin: 0 }}>
         Reading <Link to={`/books/${section.linkSlug}/`}>{section.linkLabel}</Link>?
@@ -84,7 +122,14 @@ export function BookishLifePost() {
           <Credit credit={post.heroImage.credit} creditUrl={post.heroImage.creditUrl} />
         </figure>
 
-        {post.sections.map((s) => <Section key={s.id} section={s} />)}
+        {post.sections.map((s) => (
+          <Section
+            key={s.id}
+            section={s}
+            creditLabel={post.candleCollection?.label}
+            creditUrl={post.candleCollection?.url}
+          />
+        ))}
 
         <section style={{ marginBottom: "3rem" }} data-testid="section-faq">
           <h2>Quick answers</h2>
