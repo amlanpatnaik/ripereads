@@ -33,8 +33,10 @@ export const pageMeta = (path, title, description) => ({ title: `${title} · ${c
 
 export const bookishLifeJsonLd = (post) => {
   const url = abs(routes.bookishLife(post));
+  const books = post.sections.flatMap((s) => [...(s.books || []), ...(s.holidayBooks || [])]);
   return [
-    { "@context": "https://schema.org", "@type": "BlogPosting", headline: post.title, description: post.metaDescription, author: { "@type": "Person", "@id": `${config.url}/about/#abbey`, name: config.author, url: `${config.url}/about/` }, publisher: { "@type": "Organization", name: config.name }, mainEntityOfPage: url, url, image: post.heroImage.src },
+    { "@context": "https://schema.org", "@type": "BlogPosting", headline: post.title, description: post.metaDescription, author: { "@type": "Person", "@id": `${config.url}/about/#abbey`, name: config.author, url: `${config.url}/about/` }, publisher: { "@type": "Organization", name: config.name }, mainEntityOfPage: url, url, image: abs(post.heroImage.src), datePublished: post.datePublished, dateModified: post.dateModified },
+    ...(books.length ? [{ "@context": "https://schema.org", "@type": "ItemList", name: post.title, numberOfItems: books.length, itemListElement: books.map((b, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "Book", name: b.title, author: { "@type": "Person", name: b.author.replace(/\s*\(.*\)$/, "") }, image: b.cover } })) }] : []),
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: post.faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
     { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: abs("/") },

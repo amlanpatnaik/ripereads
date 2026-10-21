@@ -238,12 +238,18 @@ export const bookishLife = [
 const cover = (id) => `https://covers.openlibrary.org/b/id/${id}-L.jpg`;
 const fallImg = (file) => `/images/fall-reads-candles/${file}`;
 const fallProduct = (slug) => `https://aarkaorigins.com/collections/fall-scented-candles/products/${slug}`;
+const holidayImg = (file) => `/images/holiday-reads-candles/${file}`;
+const bookLoversProduct = (slug) => `https://aarkaorigins.com/collections/book-lovers-soy-candles/products/${slug}`;
 
 bookishLife.push({
   slug: "fall-autumn-books-for-kids-by-age-with-candle-pairings",
-  title: "Fall & Autumn Books for Kids by Age: The Best Cozy and Spooky Reads From Toddlers to Teens (Plus Candles to Match)",
+  title: "Fall, Thanksgiving & Christmas Books for Kids by Age: 38 Cozy Reads From Toddlers to Teens (Plus Candles to Match)",
   metaDescription:
-    "The best fall and autumn books for kids, sorted by age from toddlers to teens, each paired with a real soy candle from Aarka Origins' Fall Scented Candles collection.",
+    "The best fall, Thanksgiving, Christmas, Hanukkah, and winter books for kids, sorted by age from toddlers to teens: 38 real picks, each paired with a cozy soy candle.",
+  datePublished: "2026-10-08",
+  dateModified: "2026-10-21",
+  updateNote:
+    "Updated for November and December. The questions don't stop at Halloween — they just change. By the second week of November it's \"what's a good Thanksgiving read-aloud,\" by December it's \"Christmas chapter books for a second grader,\" \"a Hanukkah book that isn't just a board book,\" and \"a holiday romance my fourteen-year-old will actually read.\" So I added twenty November and December books, five to every age band below, each one chosen to answer one of those exact questions: Thanksgiving and gratitude picks, Christmas classics and newer favorites, Hanukkah stories, and first-snow winter reads. I also added one holiday candle as a featured pick — a hot-chocolate-and-peppermint candle that pairs naturally with The Polar Express — because the whole point of this page is making reading time feel like an occasion, and nothing says December read-aloud like cocoa.",
   eyebrow: "Pillar · the bookish life",
   heroImage: {
     src: fallImg("ivory-pumpkin-jar.jpg"),
@@ -257,12 +263,38 @@ bookishLife.push({
     "A word on how this list is built. Every book below is a real, currently-in-print title, chosen because it keeps showing up on fall reading lists compiled by teachers, librarians, and parent bloggers, and because the premise earns the word \"autumn\" rather than just happening to release in October. I sorted them into four age bands because \"fall books for kids\" is useless advice without knowing whether your kid is two or fifteen: picture books for toddlers and preschoolers, early chapter books for new independent readers, middle grade for the spooky-but-not-scary shelf, and YA for the reader who wants real gothic atmosphere. Covers are pulled live from Open Library's public cover archive, the same keyless method the rest of this site uses — no invented editions, no guessed publication years.\n\nThe ten candles are the full set from Aarka Origins' Fall Scented Candles collection that a reader specifically asked me to feature. I pulled each one's current scent notes, price, and review count straight from its own product page rather than estimating, so the numbers below are what that page showed at the time I wrote this, not a guess — and I'll say plainly where a candle has barely any reviews yet instead of implying otherwise. I matched each candle to the age band whose books actually smell like it: woodsy and witchy for the middle-grade shelf, gothic and cozy-fire for the YA shelf, bright and orchard-sweet for the two youngest bands. None of these are official book tie-ins unless I say so explicitly.",
   sections: [
     {
+      id: "holiday-candle",
+      heading: "The November & December read-aloud candle: Express to North Pole",
+      candlesHeading: "The featured holiday pick",
+      featured: true,
+      candleCollection: {
+        label: "Aarka Origins — Book Lovers Soy Candles",
+        url: "https://aarkaorigins.com/collections/book-lovers-soy-candles",
+      },
+      lead:
+        "If you only add one candle to your holiday reading this year, make it this one. A reading ritual works best when it's consistent — same chair, same blanket, same scent every night — and a scent your kid already associates with December (hot chocolate, candy canes) turns \"time for reading\" into something they look forward to rather than negotiate. Light it for a family read-aloud of The Polar Express on the first snowy night, keep it on the mantel through December, and let the smell do the reminding. It comes from Aarka Origins' Book Lovers Soy Candles collection rather than the fall collection featured further down, and it is a mood pairing, not an official Polar Express product — the listing photo includes a train ticket prop, but the candle isn't licensed or endorsed by the book's author or publisher.",
+      candles: [
+        {
+          name: "Express to North Pole",
+          notes: "Hot Chocolate, Peppermint, Vanilla Cream",
+          price: "From $11.99 (wax melt) · $18.99 4oz tin · $29.99 8oz jar",
+          url: bookLoversProduct("express-to-north-pole-soy-candle-hot-chocolate-peppermint-vanilla-cream"),
+          blurb: "Steaming cocoa, bright candy-cane peppermint, and soft vanilla cream — the gentlest, most kid-recognizable holiday scent in the whole Book Lovers collection, which is exactly why it works for a family read-aloud instead of just a grown-up's reading corner. Hand-poured in small batches in North Carolina from 100% soy wax with a lead-free cotton wick, per the product page. The page doesn't currently display a rating or review count for this candle, so I'm not listing one rather than guessing. As with every candle on this page: it's a real open flame, so burn it supervised and well out of a child's reach.",
+          image: {
+            src: holidayImg("express-to-north-pole.jpg"),
+            alt: "Express to North Pole soy candle from Aarka Origins with hot chocolate, peppermint, and vanilla cream scent notes, lit on a vintage suitcase by a frosted train window with pine, a candy cane, and a pocket watch",
+          },
+        },
+      ],
+    },
+    {
       id: "toddler-preschool",
-      heading: "Fall picture books for toddlers & preschoolers (ages 2–5)",
-      booksHeading: "The books",
+      heading: "Fall, Thanksgiving & Christmas picture books for toddlers & preschoolers (ages 2–5)",
+      booksHeading: "Fall picks (September–October)",
+      holidayBooksHeading: "November & December picks: Thanksgiving, first snow, and Christmas",
       candlesHeading: "Light this at your own reading chair",
       lead:
-        "At this age the book does the work and the candle is for you, not them. Every scent in this band is something to burn in your own reading nook while you read aloud — standard open-flame soy candles, supervised and well out of reach, never on a shelf a toddler can grab.",
+        "At this age the book does the work and the candle is for you, not them. Every scent in this band is something to burn in your own reading nook while you read aloud — standard open-flame soy candles, supervised and well out of reach, never on a shelf a toddler can grab. The November and December books below are the ones parents search for most at this age — a gratitude story for Thanksgiving week, the definitive first-snow book, and the three Christmas picture books that show up on nearly every librarian's list.",
       books: [
         {
           title: "Leaf Man",
@@ -305,6 +337,48 @@ bookishLife.push({
           blurb: "A quiet walk through forest and town as summer hands the year off to fall, page by page. One of the few fall picture books that reads as genuinely poetic rather than plot-driven.",
         },
       ],
+      holidayBooks: [
+        {
+          title: "Bear Says Thanks",
+          author: "Karma Wilson & Jane Chapman",
+          ageNote: "Picture book, ages 2+",
+          cover: cover(7241057),
+          alt: "Cover of Bear Says Thanks by Karma Wilson, illustrated by Jane Chapman, showing Bear and his woodland friends sharing a feast",
+          blurb: "Bear wants to throw a feast but his cupboard is bare, so his friends each bring something — and Bear worries he has nothing to give back until he realizes his stories count. The go-to Thanksgiving-week gratitude read-aloud for the youngest listeners, with the same rhyming rhythm as Bear Snores On.",
+        },
+        {
+          title: "The Snowy Day",
+          author: "Ezra Jack Keats",
+          ageNote: "Picture book, ages 2+",
+          cover: cover(10134995),
+          alt: "Cover of The Snowy Day by Ezra Jack Keats, showing Peter in a red snowsuit walking through deep snow",
+          blurb: "Peter wakes up to the first snow of the year and spends the whole day exploring it — footprint tracks, a stick against a snowy tree, a snowball saved in his pocket that's gone by bedtime. First published in 1962, winner of the 1963 Caldecott Medal, and still the definitive first-snow book.",
+        },
+        {
+          title: "Llama Llama Holiday Drama",
+          author: "Anna Dewdney",
+          ageNote: "Picture book, ages 2+",
+          cover: cover(8091283),
+          alt: "Cover of Llama Llama Holiday Drama by Anna Dewdney, showing Llama Llama in a winter hat carrying wrapped presents",
+          blurb: "Shopping, baking, wrapping, waiting — the December rush gets to be too much for Llama Llama until Mama reminds him what the season is actually about. Honest about how overwhelming the holidays feel to a toddler, which is why parents keep reaching for it.",
+        },
+        {
+          title: "How the Grinch Stole Christmas!",
+          author: "Dr. Seuss",
+          ageNote: "Picture book, ages 3+",
+          cover: cover(11115770),
+          alt: "Cover of How the Grinch Stole Christmas! by Dr. Seuss, showing the Grinch beside a decorated Christmas tree",
+          blurb: "The Grinch steals every present in Whoville and discovers Christmas came anyway. First published in 1957 and still the Christmas picture book with the highest read-it-again rate — the rhymes carry even the wiggliest three-year-old to the end.",
+        },
+        {
+          title: "The Polar Express",
+          author: "Chris Van Allsburg",
+          ageNote: "Picture book, ages 4+",
+          cover: cover(8773122),
+          alt: "Cover of The Polar Express by Chris Van Allsburg, showing a steam locomotive in falling snow at night",
+          blurb: "A boy boards a mysterious train to the North Pole on Christmas Eve and is given the first gift of Christmas: a silver bell from Santa's sleigh that only believers can hear. Winner of the 1986 Caldecott Medal, and the book this page's featured Express to North Pole candle is built around. Best for four and up; the dark, painterly art is quieter than most toddler picks.",
+        },
+      ],
       candles: [
         {
           name: "Pumpkin Juice",
@@ -330,11 +404,12 @@ bookishLife.push({
     },
     {
       id: "early-readers",
-      heading: "Fall chapter books for early readers (ages 6–8)",
-      booksHeading: "The books",
+      heading: "Fall, Thanksgiving & holiday chapter books for early readers (ages 6–8)",
+      booksHeading: "Fall picks (September–October)",
+      holidayBooksHeading: "November & December picks: Thanksgiving, Christmas, Hanukkah, and snow-day mysteries",
       candlesHeading: "A family reading-nook candle",
       lead:
-        "Kids graduating from picture books into their first real chapter books want fall-coded plots: orchard field trips, harvest festivals, the first hint of Halloween planning. These two candles are sweet and fruity rather than smoky or spiced, so they work lit in a shared family room while an early reader works through a chapter on their own nearby.",
+        "Kids graduating from picture books into their first real chapter books want fall-coded plots: orchard field trips, harvest festivals, the first hint of Halloween planning. These two candles are sweet and fruity rather than smoky or spiced, so they work lit in a shared family room while an early reader works through a chapter on their own nearby. For November and December I leaned on the series kids this age already love — Magic Tree House, Junie B. Jones, Nate the Great, Cam Jansen — because a familiar series is the easiest way to keep a new reader going through a busy holiday month, plus one Caldecott Honor Hanukkah read-aloud.",
       books: [
         {
           title: "The Maple Festival",
@@ -369,6 +444,48 @@ bookishLife.push({
           blurb: "Four friends plan their Halloween costumes and investigate rumors about a maybe-haunted barn. Just enough mild spookiness for a reader who's outgrown picture books but isn't ready for real scares.",
         },
       ],
+      holidayBooks: [
+        {
+          title: "Thanksgiving on Thursday",
+          author: "Mary Pope Osborne (Magic Tree House, Book 27)",
+          ageNote: "Early chapter book, ages 6–9",
+          cover: cover(233645),
+          alt: "Cover of Thanksgiving on Thursday, book twenty-seven in the Magic Tree House series by Mary Pope Osborne",
+          blurb: "Jack and Annie travel back to Plymouth in 1621 and help prepare the harvest feast. The most-borrowed Thanksgiving chapter book for this age by a wide margin; for a fuller picture of that first harvest, read it alongside a book told from the Wampanoag perspective.",
+        },
+        {
+          title: "Jingle Bells, Batman Smells! (P.S. So Does May.)",
+          author: "Barbara Park (Junie B., First Grader)",
+          ageNote: "Early chapter book, ages 6–9",
+          cover: cover(6309480),
+          alt: "Cover of Jingle Bells, Batman Smells! (P.S. So Does May.) by Barbara Park, showing Junie B. Jones in a green elf costume",
+          blurb: "Junie B.'s class does Secret Santa, and she draws the name of tattletale May — and is very, very tempted to give her a lump of coal. Laugh-out-loud funny, with a real lesson about giving tucked underneath.",
+        },
+        {
+          title: "Nate the Great and the Crunchy Christmas",
+          author: "Marjorie Weinman Sharmat & Craig Sharmat",
+          ageNote: "Early reader, ages 6–8",
+          cover: cover(6738453),
+          alt: "Cover of Nate the Great and the Crunchy Christmas, showing Nate tumbling in the snow by a mailbox overflowing with Christmas mail",
+          blurb: "Nate, the pancake-loving boy detective, takes a Christmas case involving missing holiday mail and Annie's enormous dog, Fang. Short chapters, big type, and Marc Simont's illustrations make it a confidence-builder for brand-new independent readers.",
+        },
+        {
+          title: "Hershel and the Hanukkah Goblins",
+          author: "Eric A. Kimmel & Trina Schart Hyman",
+          ageNote: "Illustrated read-aloud, ages 5–8",
+          cover: cover(625131),
+          alt: "Cover of Hershel and the Hanukkah Goblins by Eric A. Kimmel, illustrated by Trina Schart Hyman, showing Hershel lighting a menorah",
+          blurb: "Goblins haunting the village synagogue have stopped anyone from celebrating Hanukkah, so clever Hershel spends eight nights outwitting them one by one. A 1990 Caldecott Honor book, and the perfect bridge for a kid still riding their Halloween love of spooky stories into December.",
+        },
+        {
+          title: "Cam Jansen and the Snowy Day Mystery",
+          author: "David A. Adler (Cam Jansen, Book 24)",
+          ageNote: "Early chapter book, ages 6–9",
+          cover: cover(6892708),
+          alt: "Cover of Cam Jansen and the Snowy Day Mystery by David A. Adler, showing Cam in a winter hat and scarf in the snow",
+          blurb: "A snowstorm, a suspicious situation, and Cam's photographic memory — \"Click!\" — doing what it does best. A winter mystery rather than a Christmas one, so it works all the way from the first snow to the end of winter break.",
+        },
+      ],
       candles: [
         {
           name: "Stars Hollow in Autumn",
@@ -394,11 +511,12 @@ bookishLife.push({
     },
     {
       id: "middle-grade",
-      heading: "Fall & spooky-season books for middle grade readers (ages 9–12)",
-      booksHeading: "The books",
+      heading: "Fall, winter & Christmas books for middle grade readers (ages 9–12)",
+      booksHeading: "Fall & spooky-season picks (September–October)",
+      holidayBooksHeading: "November & December picks: Christmas classics, Native-authored history, and deep-winter adventure",
       candlesHeading: "Candles for the spooky-but-not-scary shelf",
       lead:
-        "This is where \"fall book\" starts meaning actual ghosts, witches, and dares in the woods — just without the gore. Every title below is atmospheric rather than graphic, the same standard the rest of this site holds its middle-grade shelf to. Four candles match this band: woodsy, witchy, and library-coded instead of sweet.",
+        "This is where \"fall book\" starts meaning actual ghosts, witches, and dares in the woods — just without the gore. Every title below is atmospheric rather than graphic, the same standard the rest of this site holds its middle-grade shelf to. Four candles match this band: woodsy, witchy, and library-coded instead of sweet. Once Halloween is over, the same readers want winter with some teeth to it: a Narnia that's \"always winter and never Christmas,\" wolves crossing a frozen England, and the funniest Christmas pageant ever written. I also included a November pick told from an Ojibwe family's perspective, since November is Native American Heritage Month and \"Thanksgiving books for kids, Native American\" is one of the most common searches this time of year.",
       books: [
         {
           title: "The Witches",
@@ -439,6 +557,48 @@ bookishLife.push({
           cover: cover(10085027),
           alt: "Cover of Nightbooks by J.A. White",
           blurb: "A boy obsessed with scary stories is trapped by a witch and must keep telling them to survive, Scheherazade-style. A book about loving horror stories, written for kids who already love horror stories.",
+        },
+      ],
+      holidayBooks: [
+        {
+          title: "The Best Christmas Pageant Ever",
+          author: "Barbara Robinson",
+          ageNote: "Middle grade, ages 8–12",
+          cover: cover(50055),
+          alt: "Cover of The Best Christmas Pageant Ever by Barbara Robinson, showing a scruffy kid in an angel costume with tinsel",
+          blurb: "The Herdmans — \"absolutely the worst kids in the history of the world\" — muscle their way into every lead role in the church Christmas pageant, and somehow end up getting the story more right than anyone. First published in 1972, short enough to finish in an evening, and the single most-recommended Christmas chapter book for grades 3–6.",
+        },
+        {
+          title: "The Lion, the Witch and the Wardrobe",
+          author: "C.S. Lewis",
+          ageNote: "Middle grade, ages 8+",
+          cover: cover(8441376),
+          alt: "Cover of The Lion, the Witch and the Wardrobe by C.S. Lewis",
+          blurb: "Four siblings step through a wardrobe into Narnia, where the White Witch has made it \"always winter and never Christmas.\" The ultimate December read for this age: a frozen world, a long-awaited thaw, and Father Christmas himself arriving to mark the turn. First published in 1950.",
+        },
+        {
+          title: "A Boy Called Christmas",
+          author: "Matt Haig",
+          ageNote: "Middle grade, ages 8–12",
+          cover: cover(8539172),
+          alt: "Cover of A Boy Called Christmas by Matt Haig, showing a boy riding a reindeer across a full moon",
+          blurb: "A poor woodcutter's son named Nikolas sets out for the far north and finds a village of elves — the origin story of Father Christmas, told with Matt Haig's dry humor and a genuinely moving streak. Adapted into a 2021 film, which makes it an easy sell for reluctant readers.",
+        },
+        {
+          title: "The Birchbark House",
+          author: "Louise Erdrich",
+          ageNote: "Middle grade, ages 9–12",
+          cover: cover(1469978),
+          alt: "Cover of The Birchbark House by Louise Erdrich, showing a young Ojibwe girl in front of a birchbark house",
+          blurb: "A year in the life of Omakayas, a young Ojibwe girl on an island in Lake Superior in 1847, told season by season through a hard, unforgettable winter. A National Book Award finalist by an Ojibwe author, and my top pick for November: a harvest-season, Native-authored story that answers the search for Native American Thanksgiving books better than any Thanksgiving book does.",
+        },
+        {
+          title: "The Wolves of Willoughby Chase",
+          author: "Joan Aiken",
+          ageNote: "Middle grade, ages 9–12",
+          cover: cover(239726),
+          alt: "Cover of The Wolves of Willoughby Chase by Joan Aiken, showing wolves silhouetted against snow",
+          blurb: "In an alternate-history England buried in a brutal winter, wolves roam the countryside and two cousins are left at the mercy of a wicked governess. First published in 1962 — a gothic snowbound adventure for the kid who loved this list's spooky October picks and isn't ready to let go.",
         },
       ],
       candles: [
@@ -486,11 +646,12 @@ bookishLife.push({
     },
     {
       id: "teen-ya",
-      heading: "Fall & gothic YA books for teens (ages 13+)",
-      booksHeading: "The books",
+      heading: "Fall, winter & holiday YA books for teens (ages 13+)",
+      booksHeading: "Fall & gothic picks (September–October)",
+      holidayBooksHeading: "November & December picks: holiday romances, Hanukkah, and a Christmas ghost story",
       candlesHeading: "Candles for dark academia & gothic romance nights",
       lead:
-        "By thirteen, \"fall book\" can finally mean actual gothic: boarding-school secrets, family curses, witches with real stakes. Two candles match this band — both gothic-adjacent rather than sweet, built for an evening reading session rather than an afternoon one.",
+        "By thirteen, \"fall book\" can finally mean actual gothic: boarding-school secrets, family curses, witches with real stakes. Two candles match this band — both gothic-adjacent rather than sweet, built for an evening reading session rather than an afternoon one. The December additions answer the most-searched teen holiday request — \"Christmas books for teens\" — with romance kept at the swoony, kissing level rather than anything steamier, plus a Hanukkah romcom and a funny, sharp Christmas Carol retelling for the teen who'd rather read a ghost story than a love story.",
       books: [
         {
           title: "A Great and Terrible Beauty",
@@ -525,6 +686,48 @@ bookishLife.push({
           blurb: "A witch's granddaughter finds a boy lost in the woods behind her house, in a dark, slow-burn fairy tale with real teeth under the prettiness.",
         },
       ],
+      holidayBooks: [
+        {
+          title: "Dash & Lily's Book of Dares",
+          author: "Rachel Cohn & David Levithan",
+          ageNote: "YA, ages 13+",
+          cover: cover(10565205),
+          alt: "Cover of Dash & Lily's Book of Dares by Rachel Cohn and David Levithan, showing a snowy New York street sign",
+          blurb: "A red notebook full of dares, left on a shelf at New York's Strand bookstore at Christmastime, sets off a scavenger-hunt romance between two strangers. The most bookish holiday romance there is, adapted as a 2020 Netflix series.",
+        },
+        {
+          title: "Let It Snow: Three Holiday Romances",
+          author: "John Green, Maureen Johnson & Lauren Myracle",
+          ageNote: "YA, ages 13+",
+          cover: cover(6961682),
+          alt: "Cover of Let It Snow: Three Holiday Romances by John Green, Maureen Johnson, and Lauren Myracle",
+          blurb: "A Christmas Eve blizzard strands a small town, and three interlocking love stories play out over the snowed-in days that follow. Funny, low-heat, and made into a 2019 Netflix film — an easy yes for a teen who wants a holiday read that isn't too sweet.",
+        },
+        {
+          title: "My True Love Gave to Me: Twelve Holiday Stories",
+          author: "edited by Stephanie Perkins",
+          ageNote: "YA, ages 13+",
+          cover: cover(9277714),
+          alt: "Cover of My True Love Gave to Me: Twelve Holiday Stories edited by Stephanie Perkins, showing ice skaters on a winter pond",
+          blurb: "Twelve holiday short stories from YA authors including Rainbow Rowell, Holly Black, Laini Taylor, and Kelly Link — romance, magic, and a little bit of weird. A smart pick for a busy December: one story per night, done by the twelfth day of Christmas.",
+        },
+        {
+          title: "Eight Nights of Flirting",
+          author: "Hannah Reynolds",
+          ageNote: "YA, ages 13+",
+          cover: cover(13006616),
+          alt: "Cover of Eight Nights of Flirting by Hannah Reynolds, showing two teens lying in the snow",
+          blurb: "Shira spends Hanukkah with her big family on a wintry Nantucket and recruits the one boy she can't stand to teach her how to flirt — over eight nights, of course. The Hanukkah romcom teens actually ask for by name.",
+        },
+        {
+          title: "The Afterlife of Holly Chase",
+          author: "Cynthia Hand",
+          ageNote: "YA, ages 13+",
+          cover: cover(8458767),
+          alt: "Cover of The Afterlife of Holly Chase by Cynthia Hand",
+          blurb: "Five years ago a spoiled teen ignored the three Christmas ghosts who came to warn her, and died. Now she works for the secret company behind the visits, as the Ghost of Christmas Past. A sharp, funny Christmas Carol retelling for the teen who wants a ghost story more than a love story.",
+        },
+      ],
       candles: [
         {
           name: "Nevermore",
@@ -552,7 +755,35 @@ bookishLife.push({
   faqs: [
     {
       q: "What are the best fall books for kids by age?",
-      a: "For toddlers and preschoolers (2–5), start with Leaf Man and Apples and Pumpkins. For early readers (6–8), try The Maple Festival and A Fall for Friendship. For middle grade (9–12), Small Spaces and The Witches cover the spooky-but-safe range. For teens (13+), A Great and Terrible Beauty and Cemetery Boys deliver real gothic atmosphere without crossing into horror. The full list above has five picture books, four early chapter books, five middle grade titles, and four YA novels, each matched to the age it's actually written for.",
+      a: "For toddlers and preschoolers (2–5), start with Leaf Man and Apples and Pumpkins. For early readers (6–8), try The Maple Festival and A Fall for Friendship. For middle grade (9–12), Small Spaces and The Witches cover the spooky-but-safe range. For teens (13+), A Great and Terrible Beauty and Cemetery Boys deliver real gothic atmosphere without crossing into horror. The full list above has 38 books across the four age bands — 18 fall picks for September and October plus 20 November and December picks — each matched to the age it's actually written for.",
+    },
+    {
+      q: "What are the best Thanksgiving books for kids?",
+      a: "For ages 2–5, Bear Says Thanks by Karma Wilson is the classic gratitude read-aloud for Thanksgiving week. For ages 6–9, Thanksgiving on Thursday (Magic Tree House #27) by Mary Pope Osborne is the most popular Thanksgiving chapter book — best read alongside a book told from the Wampanoag perspective. For ages 9–12, The Birchbark House by Ojibwe author Louise Erdrich is a harvest-season story that gives November a Native-authored perspective.",
+    },
+    {
+      q: "What are the best Christmas books for toddlers and preschoolers?",
+      a: "How the Grinch Stole Christmas! by Dr. Seuss (ages 3+), Llama Llama Holiday Drama by Anna Dewdney (ages 2+), and The Polar Express by Chris Van Allsburg (ages 4+). For a winter book that isn't specifically about Christmas, The Snowy Day by Ezra Jack Keats is the definitive first-snow picture book.",
+    },
+    {
+      q: "What are good Christmas chapter books for 1st, 2nd, and 3rd graders?",
+      a: "For ages 6–9: Jingle Bells, Batman Smells! (P.S. So Does May.) by Barbara Park (Junie B. Jones), Nate the Great and the Crunchy Christmas by Marjorie Weinman Sharmat and Craig Sharmat, and Cam Jansen and the Snowy Day Mystery by David A. Adler for a winter mystery. By third grade, many kids are ready for The Best Christmas Pageant Ever by Barbara Robinson, which also tops most lists for grades 4–6.",
+    },
+    {
+      q: "What are the best Christmas books for middle grade readers (ages 9–12)?",
+      a: "The Best Christmas Pageant Ever by Barbara Robinson, A Boy Called Christmas by Matt Haig, and The Lion, the Witch and the Wardrobe by C.S. Lewis, where Narnia is \"always winter and never Christmas.\" For a snowbound adventure with a gothic edge, try The Wolves of Willoughby Chase by Joan Aiken.",
+    },
+    {
+      q: "What are good Christmas and holiday books for teens?",
+      a: "Dash & Lily's Book of Dares by Rachel Cohn and David Levithan, Let It Snow by John Green, Maureen Johnson, and Lauren Myracle, and the anthology My True Love Gave to Me edited by Stephanie Perkins — all holiday romances kept at a kissing level rather than anything steamier. For Hanukkah, Eight Nights of Flirting by Hannah Reynolds. For a teen who prefers ghosts to romance, The Afterlife of Holly Chase by Cynthia Hand retells A Christmas Carol.",
+    },
+    {
+      q: "What are good Hanukkah books for kids?",
+      a: "For ages 5–8, Hershel and the Hanukkah Goblins by Eric A. Kimmel, illustrated by Trina Schart Hyman, a Caldecott Honor book about outwitting goblins over eight nights. For teens, Eight Nights of Flirting by Hannah Reynolds is a Hanukkah romcom set on Nantucket.",
+    },
+    {
+      q: "What candle goes with The Polar Express?",
+      a: "Express to North Pole from Aarka Origins' Book Lovers Soy Candles collection — hot chocolate, peppermint, and vanilla cream, which matches the book's hot-cocoa-on-the-train scene. It's a mood pairing, not an official or licensed Polar Express product. Prices start at $11.99 for a wax melt, with a 4oz tin at $18.99 and an 8oz jar at $29.99.",
     },
     {
       q: "Which fall candle should I pair with a kid's spooky middle grade book?",
@@ -568,17 +799,17 @@ bookishLife.push({
     },
     {
       q: "How many reviews do these fall candles actually have?",
-      a: "Across the ten candles featured here, combined review counts total 376 as of this writing. Seven of the ten (Pumpkin Juice, Autumn Witch, Haunted Library, Witching Hour, Sleepy Hollow, Nevermore, and Stars Hollow) carry 20 or more reviews, and two of those — Stars Hollow and The Keeper's Hut — are each past 90. Two candles are genuinely new to the collection: October Rain has no reviews yet, and Stars Hollow in Autumn currently has one. I'm listing those counts plainly rather than implying every candle here is equally proven.",
+      a: "Across the ten fall candles featured here, combined review counts total 376 as of this writing. Seven of the ten (Pumpkin Juice, Autumn Witch, Haunted Library, Witching Hour, Sleepy Hollow, Nevermore, and Stars Hollow) carry 20 or more reviews, and two of those — Stars Hollow and The Keeper's Hut — are each past 90. Two candles are genuinely new to the collection: October Rain has no reviews yet, and Stars Hollow in Autumn currently has one. I'm listing those counts plainly rather than implying every candle here is equally proven. The holiday pick, Express to North Pole, doesn't display a rating or review count on its product page, so I haven't listed one for it.",
     },
     {
-      q: "Where can I buy the fall candles mentioned in this post?",
-      a: "All ten are part of Aarka Origins' Fall Scented Candles collection, linked at the bottom of this page and underneath each candle above. I have no affiliate arrangement or sponsorship with Aarka Origins; I'm linking directly to each product because a reader asked me to feature this specific collection.",
+      q: "Where can I buy the candles mentioned in this post?",
+      a: "The ten fall candles are part of Aarka Origins' Fall Scented Candles collection, linked at the bottom of this page and underneath each candle above. The holiday pick, Express to North Pole, is from Aarka Origins' Book Lovers Soy Candles collection and is linked from its card at the top of the page. I have no affiliate arrangement or sponsorship with Aarka Origins; I'm linking directly to each product because a reader asked me to feature these collections.",
     },
   ],
   closing: {
     heading: "See the rest of the Fall Scented Candles collection",
     body:
-      "These ten candles are a slice of a much larger fall lineup — Aarka Origins' Fall Scented Candles collection runs to more than fifty scents, from pumpkin-spice lattes to haunted carnivals. If none of the ten above fit your reader's exact book, it's worth a browse on your own. I have no partnership or affiliate arrangement with Aarka Origins; I linked this collection because a reader asked me to feature it, and I'll update this page if any of these ten candles change scent notes, price, or go out of stock.",
+      "These ten candles are a slice of a much larger fall lineup — Aarka Origins' Fall Scented Candles collection runs to more than fifty scents, from pumpkin-spice lattes to haunted carnivals. If none of the ten above fit your reader's exact book, it's worth a browse on your own. I have no partnership or affiliate arrangement with Aarka Origins; I linked this collection because a reader asked me to feature it, and I'll update this page if any of these ten candles change scent notes, price, or go out of stock. For November and December, the Book Lovers Soy Candles collection is the better browse: it's where the winter and Christmas scents live, including the Express to North Pole candle featured at the top of this page.",
     ctaLabel: "Browse the full Fall Scented Candles collection at Aarka Origins",
     ctaUrl: "https://aarkaorigins.com/collections/fall-scented-candles",
   },

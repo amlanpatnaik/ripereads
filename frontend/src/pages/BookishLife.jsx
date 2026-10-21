@@ -51,23 +51,36 @@ const BookCard = ({ book }) => (
   </figure>
 );
 
+const BookGrid = ({ heading, books }) =>
+  books?.length ? (
+    <>
+      <h3 style={{ margin: "1.25rem 0 0.25rem", fontSize: "1rem" }}>{heading}</h3>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "1.5rem", margin: "0.75rem 0 1.5rem" }}>
+        {books.map((b) => <BookCard key={b.title} book={b} />)}
+      </div>
+    </>
+  ) : null;
+
 const Section = ({ section, creditLabel, creditUrl }) => (
   <section style={{ marginBottom: "3rem" }} data-testid={`section-${section.id}`}>
     <h2>{section.heading}</h2>
     <p className="reading" style={{ color: "var(--ink-soft)" }}>{section.lead}</p>
-    {section.books?.length ? (
-      <>
-        <h3 style={{ margin: "1.25rem 0 0.25rem", fontSize: "1rem" }}>{section.booksHeading || "The books"}</h3>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "1.5rem", margin: "0.75rem 0 1.5rem" }}>
-          {section.books.map((b) => <BookCard key={b.title} book={b} />)}
-        </div>
-      </>
-    ) : null}
+    <BookGrid heading={section.booksHeading || "The books"} books={section.books} />
+    <BookGrid heading={section.holidayBooksHeading || "November & December picks"} books={section.holidayBooks} />
     {section.candles?.length ? (
       <>
         <h3 style={{ margin: "1.25rem 0 0.25rem", fontSize: "1rem" }}>{section.candlesHeading || "The candle pairing"}</h3>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1.75rem", margin: "0.75rem 0 1.5rem" }}>
-          {section.candles.map((c) => <CandleCard key={c.name} candle={c} creditLabel={creditLabel} creditUrl={creditUrl} />)}
+        <div style={section.featured
+          ? { display: "grid", gridTemplateColumns: "1fr", maxWidth: 640, margin: "0.75rem 0 1.5rem" }
+          : { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1.75rem", margin: "0.75rem 0 1.5rem" }}>
+          {section.candles.map((c) => (
+            <CandleCard
+              key={c.name}
+              candle={c}
+              creditLabel={section.candleCollection?.label || creditLabel}
+              creditUrl={section.candleCollection?.url || creditUrl}
+            />
+          ))}
         </div>
       </>
     ) : null}
@@ -114,6 +127,12 @@ export function BookishLifePost() {
       <Seo meta={pageMeta(`/bookish-life/${post.slug}/`, post.title, post.metaDescription)} jsonld={bookishLifeJsonLd(post)} />
       <PillarHeader eyebrow={post.eyebrow} title={post.title} intro={post.metaDescription} seed={post.slug} />
       <div className="wrap" style={{ padding: "2.5rem 0 4rem" }} data-testid="bookish-life-post">
+        {post.dateModified && (
+          <p className="mono" style={{ color: "var(--ink-faint)", margin: "0 0 1rem" }}>
+            Updated <time dateTime={post.dateModified}>{new Date(`${post.dateModified}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}</time>
+          </p>
+        )}
+        {post.updateNote && <p className="reading" style={{ fontSize: "1.05rem" }}>{post.updateNote}</p>}
         <p className="reading" style={{ fontSize: "1.05rem" }}>{post.intro}</p>
         {post.method && <p className="reading" style={{ color: "var(--ink-soft)" }}>{post.method}</p>}
 

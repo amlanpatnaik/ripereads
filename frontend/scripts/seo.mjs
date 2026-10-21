@@ -12,7 +12,8 @@ import { H2 } from "../src/lib/text.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const pub = path.join(root, "public");
 const abs = (p) => `${config.url}${p}`;
-const urlset = (urls) => `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${abs(u)}</loc></url>`).join("\n")}\n</urlset>\n`;
+const lastmod = Object.fromEntries(bookishLife.filter((p) => p.dateModified).map((p) => [routes.bookishLife(p), p.dateModified]));
+const urlset = (urls) => `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${abs(u)}</loc>${lastmod[u] ? `<lastmod>${lastmod[u]}</lastmod>` : ""}</url>`).join("\n")}\n</urlset>\n`;
 
 const bookUrls = books.map(routes.book);
 const hubUrls = allRoutes().filter((r) => !r.startsWith("/books/") && !r.startsWith("/vibes/") && !r.startsWith("/read-next/"));
