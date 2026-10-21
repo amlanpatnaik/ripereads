@@ -1,6 +1,7 @@
 import config from "../site.config.mjs";
 import { SIGNALS, bandBySlug, signalTotal } from "../data/rubric.mjs";
 import { routes, quickAnswers } from "./links.mjs";
+import { bookBySlug } from "../data/books.mjs";
 
 const abs = (p) => `${config.url}${p}`;
 
@@ -42,6 +43,26 @@ export const bookishLifeJsonLd = (post) => {
       { "@type": "ListItem", position: 1, name: "Home", item: abs("/") },
       { "@type": "ListItem", position: 2, name: "The Bookish Life", item: abs("/bookish-life/") },
       { "@type": "ListItem", position: 3, name: post.title, item: url },
+    ] },
+  ];
+};
+
+export const vibeMeta = (vibe) => ({
+  title: `${vibe.title} · ${config.name}`,
+  description: vibe.description || vibe.intro.slice(0, 155),
+  canonical: abs(routes.vibe(vibe)),
+  image: vibe.candle ? abs(vibe.candle.image.src) : abs("/og/site/"),
+});
+
+export const vibeJsonLd = (vibe) => {
+  const url = abs(routes.vibe(vibe));
+  const list = vibe.books.map(bookBySlug);
+  return [
+    { "@context": "https://schema.org", "@type": "ItemList", name: vibe.title, description: vibe.intro, url, numberOfItems: list.length, itemListElement: list.map((b, i) => ({ "@type": "ListItem", position: i + 1, url: abs(routes.book(b)), name: `${b.title} by ${b.author}, ripe at ${bandBySlug(b.ageBand).stamp}` })) },
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: abs("/") },
+      { "@type": "ListItem", position: 2, name: "Vibes lists", item: abs("/lists/") },
+      { "@type": "ListItem", position: 3, name: vibe.title, item: url },
     ] },
   ];
 };

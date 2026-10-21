@@ -7,7 +7,7 @@ import { vibes } from "../src/data/vibes.mjs";
 import { bookishLife } from "../src/data/bookishLife.mjs";
 import { AGE_BANDS, GRADES, bandBySlug } from "../src/data/rubric.mjs";
 import { allRoutes, routes, seriesList, bookPageText } from "../src/lib/links.mjs";
-import { bookJsonLd, bookMeta, bookishLifeJsonLd } from "../src/lib/seo.mjs";
+import { bookJsonLd, bookMeta, bookishLifeJsonLd, vibeMeta, vibeJsonLd } from "../src/lib/seo.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const build = path.join(root, "build");
@@ -18,7 +18,7 @@ const metaFor = (route) => {
   const book = books.find((b) => routes.book(b) === route);
   if (book) return { ...bookMeta(book), jsonld: bookJsonLd(book), body: bookPageText(book) };
   const vibe = vibes.find((v) => routes.vibe(v) === route);
-  if (vibe) return { title: `${vibe.title} · ${config.name}`, description: vibe.intro.slice(0, 155), canonical: `${config.url}${route}`, image: `${config.url}/og/site/`, body: `${vibe.title}\n${vibe.intro}\n${vibe.books.map((s) => { const b = books.find((x) => x.slug === s); return `${b.title} by ${b.author}, ripe at ${bandBySlug(b.ageBand).stamp}`; }).join("\n")}` };
+  if (vibe) return { ...vibeMeta(vibe), jsonld: vibeJsonLd(vibe), body: [vibe.title, vibe.intro, ...vibe.books.map((s) => { const b = books.find((x) => x.slug === s); return `${b.title} by ${b.author}, ripe at ${bandBySlug(b.ageBand).stamp}. ${b.verdict}`; }), ...(vibe.candle ? [`${vibe.candle.heading}: ${vibe.candle.name} (${vibe.candle.notes}). ${vibe.candle.blurb}`] : [])].join("\n") };
   const age = AGE_BANDS.find((a) => routes.age(a.slug) === route);
   if (age) return { title: `Fantasy and romantasy ripe for ages ${age.label} · ${config.name}`, description: `Every title I have rated for ${age.label} readers, with the signals that put it there.`, canonical: `${config.url}${route}`, image: `${config.url}/og/site/`, body: `Ages ${age.label}` };
   const grade = GRADES.find((g) => routes.grade(g.slug) === route);
@@ -49,7 +49,7 @@ for (const route of allRoutes()) {
     ...(m.jsonld || []).map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</script>`),
   ].join("");
   const staticBody = `<main data-prerendered="true">${m.body.split("\n").map((l) => `<p>${esc(l)}</p>`).join("")}</main>`;
-  const html = template.replace(/<title>.*?<\/title>/, "").replace("</head>", `${head}</head>`).replace('<div id="root"></div>', `<div id="root">${staticBody}</div>`);
+  const html = template.replace(/<title>.*?<\/title>/, "").replace(/<meta name="description"[^>]*>/, "").replace("</head>", `${head}</head>`).replace('<div id="root"></div>', `<div id="root">${staticBody}</div>`);
   const dir = path.join(build, route);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "index.html"), html);

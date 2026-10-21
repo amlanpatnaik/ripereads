@@ -7,6 +7,8 @@ import { vibes } from "../data/vibes.mjs";
 import { bandBySlug } from "../data/rubric.mjs";
 import { routes, stepDown, stepUp, stepText } from "../lib/links.mjs";
 import NotFound from "./NotFound";
+import { CandleCard } from "../components/CandleCard";
+import { vibeMeta, vibeJsonLd } from "../lib/seo.mjs";
 
 export function Lists() {
   return (
@@ -30,12 +32,18 @@ export function Vibe() {
   if (!v) return <NotFound />;
   const list = v.books.map(bookBySlug).sort((a, b) => a.ageBand.localeCompare(b.ageBand));
   return (
-    <Page path={routes.vibe(v)} eyebrow="Vibes list" title={v.title} intro={v.intro} seed={v.slug} wide testid="vibe-page">
+    <Page path={routes.vibe(v)} eyebrow="Vibes list" title={v.title} intro={v.intro} seed={v.slug} wide testid="vibe-page" meta={vibeMeta(v)} jsonld={vibeJsonLd(v)}>
       <div className="vibe-layout">
         <ul style={{ padding: 0, margin: 0 }} data-testid="vibe-list">
           {list.map((b) => <BookRow key={b.slug} book={b} note={`${bandBySlug(b.ageBand).label} · loudest signal ${topSignal(b).label.toLowerCase()} at ${topSignal(b).score}/4. ${b.verdict}`} />)}
         </ul>
         <aside style={{ maxWidth: 320 }} data-testid="vibe-pin">
+          {v.candle && (
+            <div style={{ marginBottom: "2rem" }} data-testid="vibe-candle">
+              <p className="mono" style={{ color: "var(--ink-faint)" }}>{v.candle.heading || "The candle pairing"}</p>
+              <CandleCard candle={v.candle} />
+            </div>
+          )}
           <p className="mono" style={{ color: "var(--ink-faint)" }}>Pin for this list</p>
           <PinCard book={list[0]} list={v.title} />
           <p style={{ fontSize: "0.85rem", color: "var(--ink-soft)", marginTop: "0.5rem" }}>Generated at build time from the data, 1000×1500. <Link to={`/pin/${list[0].slug}/`}>Open full size</Link>.</p>
