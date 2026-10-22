@@ -67,7 +67,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
+    "build": "GENERATE_SOURCEMAP=false craco build",
     "test": "craco test",
     "validate": "node scripts/validate.mjs",
     "resolve": "node scripts/resolve.mjs",

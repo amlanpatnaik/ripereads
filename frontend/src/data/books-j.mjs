@@ -1,10 +1,7 @@
 import { mk } from "./mk.mjs";
 
-// Batch J (2026-10-21): twenty titles chosen for November–December search demand —
-// the Sunrise on the Reaping film and Percy Jackson season 3 (both Nov 20), HBO's
-// Harry Potter (Dec 25), the Narnia trailer, ACOTAR book six (Oct 27), winter and
-// Christmas fantasy, and "is X appropriate for N year olds" queries. All unmarked:
-// rated from the publisher record, trade reviews and consistent reader reports.
+// Batch J (2026-10-21). All unmarked: rated from the publisher record, trade
+// reviews and consistent reader reports.
 const u = (b) => mk({ readStatus: "unmarked", ...b });
 
 export const booksJ = [

@@ -89,3 +89,8 @@ android-sdk/
 credentials.json
 *.key
 .credentials
+
+# Private planning/strategy docs — kept locally, never pushed to remote
+docs/private/
+research_notes/
+reports/

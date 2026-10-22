@@ -1,12 +1,7 @@
 import { mk } from "./mk.mjs";
 
-// Batch K (2026-10-22): twenty titles chosen for November–December search demand —
-// Ti West's Ebenezer: A Christmas Carol (Nov 13), Dune: Part Three (Dec 18, adapting
-// Dune Messiah), Christmas-break gift and "Christmas books for teens" searches, the
-// next Harry Potter and Percy Jackson volumes, and evergreen "is X appropriate for
-// N year olds" queries (The Hobbit, Warrior Cats, The Giver, A Good Girl's Guide to
-// Murder, Red Rising, Mistborn, Project Hail Mary). All unmarked: rated from the
-// publisher record, trade reviews and consistent reader reports.
+// Batch K (2026-10-22). All unmarked: rated from the publisher record, trade
+// reviews and consistent reader reports.
 const u = (b) => mk({ readStatus: "unmarked", ...b });
 
 export const booksK = [

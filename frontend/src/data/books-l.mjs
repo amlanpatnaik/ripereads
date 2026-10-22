@@ -1,12 +1,7 @@
 import { mk } from "./mk.mjs";
 
-// Batch L (2026-10-22): twenty titles chosen for November–December search demand —
-// HBO's Harry Potter (Dec 25) and "harry potter books age rating", the Disney+ Diary of
-// a Wimpy Kid Christmas film The Getaway (Dec 4) and book 21 in October, Netflix's
-// In a Holidaze (Dec 2), Christmas chapter books for middle schoolers, and gift-season
-// "is X appropriate for N year olds" queries (Wonder, Holes, The Outsiders, Ender's
-// Game, Lord of the Flies, Heartstopper, We Were Liars, Wicked, Icebreaker). All
-// unmarked: rated from the publisher record, trade reviews and consistent reader reports.
+// Batch L (2026-10-22). All unmarked: rated from the publisher record, trade
+// reviews and consistent reader reports.
 const u = (b) => mk({ readStatus: "unmarked", ...b });
 
 export const booksL = [
