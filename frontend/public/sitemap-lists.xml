@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ripereads.example/vibes/harry-potter-books-by-age/</loc></url>
+  <url><loc>https://ripereads.example/vibes/christmas-books-for-kids-8-to-12/</loc></url>
+  <url><loc>https://ripereads.example/vibes/adult-books-teens-ask-for/</loc></url>
+  <url><loc>https://ripereads.example/vibes/classroom-classics-by-age/</loc></url>
   <url><loc>https://ripereads.example/vibes/christmas-books-for-teens/</loc></url>
   <url><loc>https://ripereads.example/vibes/best-books-to-give-teens-for-christmas/</loc></url>
   <url><loc>https://ripereads.example/vibes/winter-and-christmas-fantasy-books/</loc></url>
@@ -125,4 +129,24 @@
   <url><loc>https://ripereads.example/read-next/the-summer-i-turned-pretty/</loc></url>
   <url><loc>https://ripereads.example/read-next/the-name-of-the-wind/</loc></url>
   <url><loc>https://ripereads.example/read-next/crooked-kingdom/</loc></url>
+  <url><loc>https://ripereads.example/read-next/harry-potter-and-the-order-of-the-phoenix/</loc></url>
+  <url><loc>https://ripereads.example/read-next/harry-potter-and-the-half-blood-prince/</loc></url>
+  <url><loc>https://ripereads.example/read-next/harry-potter-and-the-deathly-hallows/</loc></url>
+  <url><loc>https://ripereads.example/read-next/percy-jackson-the-last-olympian/</loc></url>
+  <url><loc>https://ripereads.example/read-next/diary-of-a-wimpy-kid/</loc></url>
+  <url><loc>https://ripereads.example/read-next/diary-of-a-wimpy-kid-the-getaway/</loc></url>
+  <url><loc>https://ripereads.example/read-next/the-best-christmas-pageant-ever/</loc></url>
+  <url><loc>https://ripereads.example/read-next/little-women/</loc></url>
+  <url><loc>https://ripereads.example/read-next/wonder/</loc></url>
+  <url><loc>https://ripereads.example/read-next/holes/</loc></url>
+  <url><loc>https://ripereads.example/read-next/a-wrinkle-in-time/</loc></url>
+  <url><loc>https://ripereads.example/read-next/the-outsiders/</loc></url>
+  <url><loc>https://ripereads.example/read-next/heartstopper-volume-1/</loc></url>
+  <url><loc>https://ripereads.example/read-next/enders-game/</loc></url>
+  <url><loc>https://ripereads.example/read-next/the-fellowship-of-the-ring/</loc></url>
+  <url><loc>https://ripereads.example/read-next/lord-of-the-flies/</loc></url>
+  <url><loc>https://ripereads.example/read-next/we-were-liars/</loc></url>
+  <url><loc>https://ripereads.example/read-next/wicked/</loc></url>
+  <url><loc>https://ripereads.example/read-next/in-a-holidaze/</loc></url>
+  <url><loc>https://ripereads.example/read-next/icebreaker/</loc></url>
 </urlset>

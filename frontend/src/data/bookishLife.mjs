@@ -32,7 +32,20 @@ export const bookishLife = [
           "None of these say the name — the licensing reasons are obvious, and Aarka Origins would be asking for a lawsuit from Warner Bros. if they tried — but the scent notes aren't subtle about which wizarding world they're from. This is the tightest, most confident cluster in the whole catalog, which tells me the maker has sold a lot of these and kept refining them.",
         linkSlug: "harry-potter-and-the-sorcerers-stone",
         linkLabel: "Harry Potter and the Sorcerer's Stone",
+        extraLinks: [
+          { slug: "harry-potter-and-the-order-of-the-phoenix", label: "Order of the Phoenix" },
+          { slug: "harry-potter-and-the-half-blood-prince", label: "Half-Blood Prince" },
+          { slug: "harry-potter-and-the-deathly-hallows", label: "Deathly Hallows" },
+        ],
         candles: [
+          {
+            name: "Christmas at the Burrow",
+            notes: "Sugar Cookies, Cinnamon, Vanilla",
+            price: "From $11.99",
+            url: "https://aarkaorigins.com/products/christmas-at-the-burrow-soy-candle-sugar-cookies-cinnamon-vanilla",
+            blurb: "The December pick for this cluster, and the one I'd light for a family read-along timed to HBO's series on Christmas Day. Sugar cookies, cinnamon and vanilla: a crowded kitchen and a hand-knitted jumper, the Christmas Harry finally gets at the Burrow in Half-Blood Prince. Sweet and warm rather than sharp. A mood match, not a licensed product, and the listing shows no reviews I could confirm, so I'm not quoting a rating.",
+            image: { src: "/images/hogwarts-christmas-candle/christmas-at-the-burrow.jpg", alt: "Christmas at the Burrow soy candle from Aarka Origins with sugar cookies, cinnamon and vanilla scent notes, lit beside iced cookies and cinnamon sticks in front of a fireplace hung with stockings" },
+          },
           {
             name: "Butter Brew",
             notes: "Butterscotch, Caramel, Vanilla",
@@ -247,7 +260,7 @@ bookishLife.push({
   metaDescription:
     "The best fall, Thanksgiving, Christmas, Hanukkah, and winter books for kids, sorted by age from toddlers to teens: 38 real picks, each paired with a cozy soy candle.",
   datePublished: "2026-10-08",
-  dateModified: "2026-10-21",
+  dateModified: "2026-10-22",
   updateNote:
     "Updated for November and December. The questions don't stop at Halloween — they just change. By the second week of November it's \"what's a good Thanksgiving read-aloud,\" by December it's \"Christmas chapter books for a second grader,\" \"a Hanukkah book that isn't just a board book,\" and \"a holiday romance my fourteen-year-old will actually read.\" So I added twenty November and December books, five to every age band below, each one chosen to answer one of those exact questions: Thanksgiving and gratitude picks, Christmas classics and newer favorites, Hanukkah stories, and first-snow winter reads. I also added one holiday candle as a featured pick — a hot-chocolate-and-peppermint candle that pairs naturally with The Polar Express — because the whole point of this page is making reading time feel like an occasion, and nothing says December read-aloud like cocoa.",
   eyebrow: "Pillar · the bookish life",
@@ -511,6 +524,13 @@ bookishLife.push({
     },
     {
       id: "middle-grade",
+      linkSlug: "the-best-christmas-pageant-ever",
+      linkLabel: "The Best Christmas Pageant Ever",
+      extraLinks: [
+        { slug: "diary-of-a-wimpy-kid-the-getaway", label: "Diary of a Wimpy Kid: The Getaway" },
+        { slug: "a-christmas-carol", label: "A Christmas Carol" },
+        { slug: "the-lion-the-witch-and-the-wardrobe", label: "The Lion, the Witch and the Wardrobe" },
+      ],
       heading: "Fall, winter & Christmas books for middle grade readers (ages 9–12)",
       booksHeading: "Fall & spooky-season picks (September–October)",
       holidayBooksHeading: "November & December picks: Christmas classics, Native-authored history, and deep-winter adventure",
@@ -646,6 +666,13 @@ bookishLife.push({
     },
     {
       id: "teen-ya",
+      linkSlug: "let-it-snow",
+      linkLabel: "Let It Snow",
+      extraLinks: [
+        { slug: "dash-and-lilys-book-of-dares", label: "Dash & Lily's Book of Dares" },
+        { slug: "little-women", label: "Little Women" },
+        { slug: "harry-potter-and-the-deathly-hallows", label: "Deathly Hallows" },
+      ],
       heading: "Fall, winter & holiday YA books for teens (ages 13+)",
       booksHeading: "Fall & gothic picks (September–October)",
       holidayBooksHeading: "November & December picks: holiday romances, Hanukkah, and a Christmas ghost story",
@@ -776,6 +803,14 @@ bookishLife.push({
     {
       q: "What are good Christmas and holiday books for teens?",
       a: "Dash & Lily's Book of Dares by Rachel Cohn and David Levithan, Let It Snow by John Green, Maureen Johnson, and Lauren Myracle, and the anthology My True Love Gave to Me edited by Stephanie Perkins — all holiday romances kept at a kissing level rather than anything steamier. For Hanukkah, Eight Nights of Flirting by Hannah Reynolds. For a teen who prefers ghosts to romance, The Afterlife of Holly Chase by Cynthia Hand retells A Christmas Carol.",
+    },
+    {
+      q: "Is there a Diary of a Wimpy Kid Christmas book?",
+      a: "Yes: The Getaway, book twelve, in which the Heffleys skip Christmas at home for a tropical resort and everything goes wrong. Disney+ premieres the animated film, Diary of a Wimpy Kid Christmas: The Getaway, on December 4, 2026. Cabin Fever, book six, is the snowed-in-before-Christmas one. Both are gentle enough for a seven- or eight-year-old; the full rating for The Getaway is on this site.",
+    },
+    {
+      q: "What age are the later Harry Potter books for?",
+      a: "On this site's scale the first three books sit at ten-plus, Goblet of Fire, Order of the Phoenix and Half-Blood Prince at twelve-plus, and Deathly Hallows at fourteen-plus for torture and the deaths in the final battle. HBO's series starts with book one on December 25, 2026, so younger viewers have years before they reach the later books. Christmas at the Burrow, a sugar-cookie candle from Aarka Origins' Book Lovers collection, is the mood pairing for a December read-along.",
     },
     {
       q: "What are good Hanukkah books for kids?",

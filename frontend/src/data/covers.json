@@ -418,5 +418,85 @@
   "crooked-kingdom": {
     "url": "https://covers.openlibrary.org/b/id/12667428-L.jpg",
     "source": "openlibrary-search"
+  },
+  "harry-potter-and-the-order-of-the-phoenix": {
+    "url": "https://covers.openlibrary.org/b/id/15158666-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "harry-potter-and-the-half-blood-prince": {
+    "url": "https://covers.openlibrary.org/b/id/10716273-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "harry-potter-and-the-deathly-hallows": {
+    "url": "https://covers.openlibrary.org/b/id/15158660-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "percy-jackson-the-last-olympian": {
+    "url": "https://covers.openlibrary.org/b/id/6624107-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "diary-of-a-wimpy-kid": {
+    "url": "https://covers.openlibrary.org/b/id/14376136-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "diary-of-a-wimpy-kid-the-getaway": {
+    "url": "https://covers.openlibrary.org/b/isbn/9781419725456-L.jpg?default=false",
+    "source": "openlibrary-isbn"
+  },
+  "the-best-christmas-pageant-ever": {
+    "url": "https://covers.openlibrary.org/b/id/50055-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "little-women": {
+    "url": "https://covers.openlibrary.org/b/id/8775559-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "wonder": {
+    "url": "https://covers.openlibrary.org/b/isbn/9780375869020-L.jpg?default=false",
+    "source": "openlibrary-isbn"
+  },
+  "holes": {
+    "url": "https://covers.openlibrary.org/b/isbn/9780440414803-L.jpg?default=false",
+    "source": "openlibrary-isbn"
+  },
+  "a-wrinkle-in-time": {
+    "url": "https://covers.openlibrary.org/b/id/8709146-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "the-outsiders": {
+    "url": "https://covers.openlibrary.org/b/id/7263662-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "heartstopper-volume-1": {
+    "url": "https://covers.openlibrary.org/b/id/9020805-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "enders-game": {
+    "url": "https://covers.openlibrary.org/b/isbn/9780812550702-L.jpg?default=false",
+    "source": "openlibrary-isbn"
+  },
+  "the-fellowship-of-the-ring": {
+    "url": "https://covers.openlibrary.org/b/isbn/9780547928210-L.jpg?default=false",
+    "source": "openlibrary-isbn"
+  },
+  "lord-of-the-flies": {
+    "url": "https://covers.openlibrary.org/b/id/8684447-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "we-were-liars": {
+    "url": "https://covers.openlibrary.org/b/id/14425312-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "wicked": {
+    "url": "https://covers.openlibrary.org/b/isbn/9780060987107-L.jpg?default=false",
+    "source": "openlibrary-isbn"
+  },
+  "in-a-holidaze": {
+    "url": "https://covers.openlibrary.org/b/id/10505228-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "icebreaker": {
+    "url": "https://covers.openlibrary.org/b/id/13180728-L.jpg",
+    "source": "openlibrary-search"
   }
 }

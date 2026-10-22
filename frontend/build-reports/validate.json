@@ -1,12 +1,12 @@
 {
   "summary": {
-    "books": 105,
-    "vibes": 20,
-    "routes": 325,
+    "books": 125,
+    "vibes": 24,
+    "routes": 377,
     "ageBands": 5,
     "grades": 3,
     "errors": 0,
-    "warnings": 8
+    "warnings": 9
   },
   "errors": [],
   "warnings": [
@@ -17,6 +17,7 @@
     "ninth-house: only 1 step-up titles available",
     "percy-jackson-the-sea-of-monsters: only 0 step-down titles available",
     "a-court-of-silver-flames: only 1 step-up titles available",
-    "alchemised: only 1 step-up titles available"
+    "alchemised: only 1 step-up titles available",
+    "diary-of-a-wimpy-kid-the-getaway: only 0 step-down titles available"
   ]
 }
