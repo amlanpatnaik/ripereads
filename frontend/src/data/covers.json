@@ -338,5 +338,85 @@
   "alchemised": {
     "url": "https://covers.openlibrary.org/b/id/15137810-L.jpg",
     "source": "openlibrary-search"
+  },
+  "dune": {
+    "url": "https://covers.openlibrary.org/b/id/11481354-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "dune-messiah": {
+    "url": "https://covers.openlibrary.org/b/id/14613344-L.jpg",
+    "source": "openlibrary-edition"
+  },
+  "a-christmas-carol": {
+    "url": "https://covers.openlibrary.org/b/id/13813604-L.jpg",
+    "source": "openlibrary-edition"
+  },
+  "the-hobbit": {
+    "url": "https://covers.openlibrary.org/b/id/14627509-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "harry-potter-and-the-prisoner-of-azkaban": {
+    "url": "https://covers.openlibrary.org/b/id/10580435-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "harry-potter-and-the-goblet-of-fire": {
+    "url": "https://covers.openlibrary.org/b/id/15158355-L.jpg",
+    "source": "openlibrary-edition"
+  },
+  "percy-jackson-the-battle-of-the-labyrinth": {
+    "url": "https://covers.openlibrary.org/b/id/6274739-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "a-good-girls-guide-to-murder": {
+    "url": "https://covers.openlibrary.org/b/id/13156188-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "red-rising": {
+    "url": "https://covers.openlibrary.org/b/id/8407136-L.jpg",
+    "source": "openlibrary-edition"
+  },
+  "mistborn-the-final-empire": {
+    "url": "https://covers.openlibrary.org/b/id/524534-L.jpg",
+    "source": "openlibrary-edition"
+  },
+  "project-hail-mary": {
+    "url": "https://covers.openlibrary.org/b/id/11200092-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "the-giver": {
+    "url": "https://covers.openlibrary.org/b/id/8352502-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "heir-of-fire": {
+    "url": "https://covers.openlibrary.org/b/id/9318480-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "queen-of-shadows": {
+    "url": "https://covers.openlibrary.org/b/id/7994583-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "warriors-into-the-wild": {
+    "url": "https://covers.openlibrary.org/b/id/9288222-L.jpg",
+    "source": "openlibrary-edition"
+  },
+  "let-it-snow": {
+    "url": "https://covers.openlibrary.org/b/id/6961682-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "dash-and-lilys-book-of-dares": {
+    "url": "https://covers.openlibrary.org/b/id/10565205-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "the-summer-i-turned-pretty": {
+    "url": "https://covers.openlibrary.org/b/id/8783502-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "the-name-of-the-wind": {
+    "url": "https://covers.openlibrary.org/b/id/11480483-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "crooked-kingdom": {
+    "url": "https://covers.openlibrary.org/b/id/12667428-L.jpg",
+    "source": "openlibrary-search"
   }
 }

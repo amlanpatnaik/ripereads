@@ -8,6 +8,7 @@ import { booksG } from "./books-g.mjs";
 import { booksH } from "./books-h.mjs";
 import { booksI } from "./books-i.mjs";
 import { booksJ } from "./books-j.mjs";
+import { booksK } from "./books-k.mjs";
 
-export const books = [...booksA, ...booksB, ...booksC, ...booksD, ...booksE, ...booksF, ...booksG, ...booksH, ...booksI, ...booksJ];
+export const books = [...booksA, ...booksB, ...booksC, ...booksD, ...booksE, ...booksF, ...booksG, ...booksH, ...booksI, ...booksJ, ...booksK];
 export const bookBySlug = (slug) => books.find((b) => b.slug === slug);
