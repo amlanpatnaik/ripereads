@@ -153,29 +153,52 @@ Every book page has these ten sections in order: The short version · What it's 
 - [Wicked: The Life and Times of the Wicked Witch of the West by Gregory Maguire](https://ripereads.example/books/wicked/): ripe at 16+, signals 14/20, status unmarked. The novel the musical came from, and not a children's book. I stamp it sixteen-plus: there are sex scenes, a sex club with a disturbing assault, murder and political violence, and it is much darker and stranger than the films.
 - [In a Holidaze by Christina Lauren](https://ripereads.example/books/in-a-holidaze/): ripe at 16+, signals 10/20, status unmarked. A Christmas time loop at a snowy cabin, with the boy she has loved for years. I stamp it sixteen-plus: it is one of the gentler Christina Lauren books, but there is open-door sex near the end and frequent swearing, and Netflix's film, out December 2, 2026, is why teens are searching for it.
 - [Icebreaker by Hannah Grace](https://ripereads.example/books/icebreaker/): ripe at 18+, signals 12/20, status unmarked. A figure skater and a hockey captain forced to share a rink. I stamp it eighteen-plus without hesitation: it is a BookTok romance with frequent, explicit sex scenes, and it is one of the books most searched for by thirteen- and fourteen-year-olds.
+- [A Boy Called Christmas by Matt Haig](https://ripereads.example/books/a-boy-called-christmas/): ripe at 10+, signals 3/20, status unmarked. How a woodcutter's son from Finland became Father Christmas. I stamp it ten-plus by this site's floor, and it reads aloud beautifully from seven: the one thing to know is that it is sadder and sharper than the cover suggests, with a cruel aunt and a father who does not come home.
+- [The Christmas Pig by J.K. Rowling](https://ripereads.example/books/the-christmas-pig/): ripe at 10+, signals 2/20, status unmarked. A boy's lost toy, a Christmas Eve miracle and a journey through the Land of the Lost. I stamp it ten-plus by this site's floor; it works as a read-aloud from about seven, with one monster in the last third that is genuinely frightening.
+- [Anne of Green Gables by L.M. Montgomery](https://ripereads.example/books/anne-of-green-gables/): ripe at 10+, signals 2/20, status unmarked. An orphan with red hair and a great deal to say arrives at a farm on Prince Edward Island. I stamp it ten-plus: there is nothing here a child cannot handle, one accidental drunken afternoon played for comedy and one death near the end that makes everyone cry.
+- [Coraline by Neil Gaiman](https://ripereads.example/books/coraline/): ripe at 10+, signals 3/20, status unmarked. A girl finds a door to a better version of her home, where her Other Mother has buttons for eyes. I stamp it ten-plus: there is no gore, no romance and no swearing, but it is a true horror story for children, and it is scarier on the page than the film.
+- [The Wild Robot by Peter Brown](https://ripereads.example/books/the-wild-robot/): ripe at 10+, signals 2/20, status unmarked. A robot washes up on a wild island and learns to survive by learning from animals. I stamp it ten-plus by this site's floor, and it is fine from about seven: animals die as animals do, a whole goose family among them, and the ending is bittersweet.
+- [Charlie and the Chocolate Factory by Roald Dahl](https://ripereads.example/books/charlie-and-the-chocolate-factory/): ripe at 10+, signals 2/20, status unmarked. Five golden tickets, one chocolate factory and four badly behaved children who get what they deserve. I stamp it ten-plus by this site's floor; it is a read-aloud from five or six, and the only thing worth talking about is how gleefully cruel Dahl is to the children who misbehave.
+- [Matilda by Roald Dahl](https://ripereads.example/books/matilda/): ripe at 10+, signals 5/20, status unmarked. A brilliant girl with awful parents and a worse headmistress discovers she can move things with her eyes. I stamp it ten-plus by this site's floor; it is a read-aloud from six, and the Trunchbull's violence is cartoonish but real enough to talk about.
+- [The Book Thief by Markus Zusak](https://ripereads.example/books/the-book-thief/): ripe at 12+, signals 10/20, status unmarked. Nazi Germany, narrated by Death. I stamp it twelve-plus: there is almost no romance and the swearing is mostly in German, but it is a Holocaust novel with a hanging, a bombing that kills nearly everyone the reader loves, and a prisoner march that is hard to read at any age.
+- [To Kill a Mockingbird by Harper Lee](https://ripereads.example/books/to-kill-a-mockingbird/): ripe at 12+, signals 10/20, status unmarked. A girl in 1930s Alabama watches her father defend a Black man accused of rape. I stamp it twelve-plus, best in eighth grade: there is no sex on the page and no gore, but a racial slur is used dozens of times, a rape trial is described in court, and an innocent man is shot.
+- [Fahrenheit 451 by Ray Bradbury](https://ripereads.example/books/fahrenheit-451/): ripe at 12+, signals 9/20, status unmarked. A fireman whose job is burning books begins to read them. I stamp it twelve-plus by content, though most schools teach it in ninth or tenth grade for its difficulty: a woman burns to death with her library, a wife overdoses, and a man is killed with a flamethrower.
+- [Klara and the Sun by Kazuo Ishiguro](https://ripereads.example/books/klara-and-the-sun/): ripe at 12+, signals 4/20, status unmarked. An Artificial Friend, chosen from a shop window, watches over a sick girl. I stamp it twelve-plus: it is published for adults by a Nobel laureate, but there is no sex, almost no swearing and no violence, and its sorrow is quiet; Jenna Ortega stars in Taika Waititi's film, out October 23, 2026.
+- [The Fault in Our Stars by John Green](https://ripereads.example/books/the-fault-in-our-stars/): ripe at 14+, signals 9/20, status unmarked. Two teenagers with cancer fall in love. I stamp it fourteen-plus: the sex is one brief, tender, non-graphic scene, the swearing is occasional, and the grief is the whole point; many thirteen-year-olds read it, and most cry.
+- [One of Us Is Lying by Karen M. McManus](https://ripereads.example/books/one-of-us-is-lying/): ripe at 14+, signals 11/20, status unmarked. Five students walk into detention and only four walk out. I stamp it fourteen-plus: the romance is kissing and the violence is limited, but the solution involves a planned suicide, and the book handles outing, cheating and drug dealing along the way.
+- [The Hate U Give by Angie Thomas](https://ripereads.example/books/the-hate-u-give/): ripe at 14+, signals 13/20, status unmarked. A sixteen-year-old is the only witness when a police officer shoots her unarmed friend. I stamp it fourteen-plus: the romance stops at kissing, but the swearing is constant, the shooting is on the page, and the book is about grief, racism and a neighbourhood on fire.
+- [The Perks of Being a Wallflower by Stephen Chbosky](https://ripereads.example/books/the-perks-of-being-a-wallflower/): ripe at 14+, signals 14/20, status unmarked. A shy freshman's letters about the year he finally starts living. I stamp it fourteen-plus, and it is at the top of that band: drugs, sexual situations and a late revelation of childhood abuse are all on the page, handled with care but not softened.
+- [The Bodyguard by Katherine Center](https://ripereads.example/books/the-bodyguard-katherine-center/): ripe at 14+, signals 10/20, status unmarked. A bodyguard has to pretend to be her movie-star client's girlfriend for his family. I stamp it fourteen-plus: it is an adult romance with the door closed, some swearing and a stalker, and Netflix's film, Guarding Stars, arrives November 18, 2026.
+- [It Ends with Us by Colleen Hoover](https://ripereads.example/books/it-ends-with-us/): ripe at 16+, signals 15/20, status unmarked. A woman falls for a charming neurosurgeon and slowly realises he is repeating her father's violence. I stamp it sixteen-plus: it has open-door sex scenes and an attempted rape, and it is the book thirteen- and fourteen-year-olds find on TikTok first.
+- [The Housemaid by Freida McFadden](https://ripereads.example/books/the-housemaid/): ripe at 16+, signals 16/20, status unmarked. A woman just out of prison takes a live-in job with a rich family and a locked attic room. I stamp it sixteen-plus: the sex is brief and the language strong, but the twist turns on imprisonment and abuse, and the revenge is torture described in detail.
+- [Twisted Love by Ana Huang](https://ripereads.example/books/twisted-love/): ripe at 18+, signals 15/20, status unmarked. A brooding billionaire falls for his best friend's little sister. I stamp it eighteen-plus without hesitation: it has frequent, explicit sex scenes and a revenge plot with real violence, and it is one of the books most searched for by thirteen- and fourteen-year-olds.
+- [Haunting Adeline by H.D. Carlton](https://ripereads.example/books/haunting-adeline/): ripe at 18+, signals 18/20, status unmarked. A writer moves into her family's gothic manor and is stalked by a masked man who becomes her lover. I stamp it eighteen-plus, and it is the most extreme book on this site: explicit sex without consent, graphic torture and human trafficking, with a content-warning list from the author herself.
 
 ## Vibes lists
 - [Harry Potter books by age: when to hand over each one, before the HBO series](https://ripereads.example/vibes/harry-potter-books-by-age/): 7 titles
-- [Christmas books for 8 to 12 year olds and middle schoolers, by age](https://ripereads.example/vibes/christmas-books-for-kids-8-to-12/): 11 titles
-- [Books teens ask for that are really adult: the honest age for each](https://ripereads.example/vibes/adult-books-teens-ask-for/): 9 titles
-- [Classroom classics by age: Wonder, Holes, The Outsiders, Lord of the Flies and more](https://ripereads.example/vibes/classroom-classics-by-age/): 11 titles
-- [Christmas books for teens and tweens, by age: clean picks first](https://ripereads.example/vibes/christmas-books-for-teens/): 15 titles
-- [The best books to give a teen for Christmas, by age](https://ripereads.example/vibes/best-books-to-give-teens-for-christmas/): 24 titles
-- [Winter and Christmas fantasy books, by age](https://ripereads.example/vibes/winter-and-christmas-fantasy-books/): 14 titles
-- [Read it before you watch it: Hunger Games, Percy Jackson, Harry Potter, Dune, Wimpy Kid and A Christmas Carol by age](https://ripereads.example/vibes/read-before-the-movie/): 19 titles
+- [Is The Housemaid, It Ends with Us or Twisted Love OK for a teen? BookTok books by age](https://ripereads.example/vibes/booktok-books-by-age/): 14 titles
+- [Sad books for teens and tweens, by age: the ones that make everyone cry](https://ripereads.example/vibes/sad-books-for-teens-by-age/): 13 titles
+- [The best books for 9, 10 and 11 year olds, with what is in each one](https://ripereads.example/vibes/best-books-for-9-10-and-11-year-olds/): 17 titles
+- [Christmas books for 8 to 12 year olds and middle schoolers, by age](https://ripereads.example/vibes/christmas-books-for-kids-8-to-12/): 14 titles
+- [Books teens ask for that are really adult: the honest age for each](https://ripereads.example/vibes/adult-books-teens-ask-for/): 14 titles
+- [Classroom classics by age: Wonder, The Outsiders, To Kill a Mockingbird, The Book Thief and more](https://ripereads.example/vibes/classroom-classics-by-age/): 18 titles
+- [Christmas books for teens and tweens, by age: clean picks first](https://ripereads.example/vibes/christmas-books-for-teens/): 18 titles
+- [The best books to give a teen for Christmas, by age](https://ripereads.example/vibes/best-books-to-give-teens-for-christmas/): 31 titles
+- [Winter and Christmas fantasy books, by age](https://ripereads.example/vibes/winter-and-christmas-fantasy-books/): 16 titles
+- [Read it before you watch it: Hunger Games, Harry Potter, Dune, Klara and the Sun, The Bodyguard and more, by age](https://ripereads.example/vibes/read-before-the-movie/): 23 titles
 - [Books like Fourth Wing, with the age for each](https://ripereads.example/vibes/books-like-fourth-wing/): 12 titles
 - [Books like ACOTAR, by how far the door is open](https://ripereads.example/vibes/books-like-acotar/): 12 titles
 - [What to read after Percy Jackson](https://ripereads.example/vibes/after-percy-jackson/): 17 titles
 - [What to read after Harry Potter](https://ripereads.example/vibes/after-harry-potter/): 23 titles
-- [What to read after The Hunger Games](https://ripereads.example/vibes/after-the-hunger-games/): 18 titles
+- [What to read after The Hunger Games](https://ripereads.example/vibes/after-the-hunger-games/): 20 titles
 - [Enemies to lovers, without the whiplash](https://ripereads.example/vibes/enemies-to-lovers/): 15 titles
 - [Dragons, academies and deadly exams](https://ripereads.example/vibes/dragons-and-academies/): 11 titles
 - [Fae courts and bargains with teeth](https://ripereads.example/vibes/fae-courts/): 13 titles
 - [Heists, crews and found family](https://ripereads.example/vibes/heists-and-found-family/): 12 titles
 - [Slow burn, low heat: clean romantasy for teens](https://ripereads.example/vibes/slow-burn-low-heat/): 13 titles
-- [Dark, gothic and a little bit haunted](https://ripereads.example/vibes/dark-and-gothic/): 15 titles
+- [Dark, gothic and a little bit haunted](https://ripereads.example/vibes/dark-and-gothic/): 18 titles
 - [Cozy fantasy: low stakes, warm drinks](https://ripereads.example/vibes/cozy-fantasy/): 5 titles
-- [Dark academia for teens, sorted by how dark](https://ripereads.example/vibes/dark-academia/): 11 titles
+- [Dark academia for teens, sorted by how dark](https://ripereads.example/vibes/dark-academia/): 12 titles
 - [Vampires, demons and forbidden love](https://ripereads.example/vibes/vampires-and-forbidden-love/): 7 titles
 - [Myth and fairy-tale retellings](https://ripereads.example/vibes/myth-retellings/): 16 titles
 - [Series that grow up with the reader](https://ripereads.example/vibes/series-that-grow-up/): 17 titles
@@ -263,6 +286,15 @@ Every book page has these ten sections in order: The short version · What it's 
 - [We Were Liars](https://ripereads.example/series/we-were-liars/)
 - [The Wicked Years](https://ripereads.example/series/the-wicked-years/)
 - [Maple Hills](https://ripereads.example/series/maple-hills/)
+- [A Boy Called Christmas](https://ripereads.example/series/a-boy-called-christmas-series/)
+- [Anne of Green Gables](https://ripereads.example/series/anne-of-green-gables/)
+- [The Wild Robot](https://ripereads.example/series/the-wild-robot/)
+- [Charlie Bucket](https://ripereads.example/series/charlie-bucket/)
+- [One of Us Is Lying](https://ripereads.example/series/one-of-us-is-lying/)
+- [It Ends with Us](https://ripereads.example/series/it-ends-with-us/)
+- [The Housemaid](https://ripereads.example/series/the-housemaid/)
+- [Twisted](https://ripereads.example/series/twisted/)
+- [Cat and Mouse Duet](https://ripereads.example/series/cat-and-mouse-duet/)
 
 ## Trust pages
 - https://ripereads.example/method/ — full method

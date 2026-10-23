@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ripereads.example/vibes/harry-potter-books-by-age/</loc></url>
+  <url><loc>https://ripereads.example/vibes/booktok-books-by-age/</loc></url>
+  <url><loc>https://ripereads.example/vibes/sad-books-for-teens-by-age/</loc></url>
+  <url><loc>https://ripereads.example/vibes/best-books-for-9-10-and-11-year-olds/</loc></url>
   <url><loc>https://ripereads.example/vibes/christmas-books-for-kids-8-to-12/</loc></url>
   <url><loc>https://ripereads.example/vibes/adult-books-teens-ask-for/</loc></url>
   <url><loc>https://ripereads.example/vibes/classroom-classics-by-age/</loc></url>
@@ -149,4 +152,24 @@
   <url><loc>https://ripereads.example/read-next/wicked/</loc></url>
   <url><loc>https://ripereads.example/read-next/in-a-holidaze/</loc></url>
   <url><loc>https://ripereads.example/read-next/icebreaker/</loc></url>
+  <url><loc>https://ripereads.example/read-next/a-boy-called-christmas/</loc></url>
+  <url><loc>https://ripereads.example/read-next/the-christmas-pig/</loc></url>
+  <url><loc>https://ripereads.example/read-next/anne-of-green-gables/</loc></url>
+  <url><loc>https://ripereads.example/read-next/coraline/</loc></url>
+  <url><loc>https://ripereads.example/read-next/the-wild-robot/</loc></url>
+  <url><loc>https://ripereads.example/read-next/charlie-and-the-chocolate-factory/</loc></url>
+  <url><loc>https://ripereads.example/read-next/matilda/</loc></url>
+  <url><loc>https://ripereads.example/read-next/the-book-thief/</loc></url>
+  <url><loc>https://ripereads.example/read-next/to-kill-a-mockingbird/</loc></url>
+  <url><loc>https://ripereads.example/read-next/fahrenheit-451/</loc></url>
+  <url><loc>https://ripereads.example/read-next/klara-and-the-sun/</loc></url>
+  <url><loc>https://ripereads.example/read-next/the-fault-in-our-stars/</loc></url>
+  <url><loc>https://ripereads.example/read-next/one-of-us-is-lying/</loc></url>
+  <url><loc>https://ripereads.example/read-next/the-hate-u-give/</loc></url>
+  <url><loc>https://ripereads.example/read-next/the-perks-of-being-a-wallflower/</loc></url>
+  <url><loc>https://ripereads.example/read-next/the-bodyguard-katherine-center/</loc></url>
+  <url><loc>https://ripereads.example/read-next/it-ends-with-us/</loc></url>
+  <url><loc>https://ripereads.example/read-next/the-housemaid/</loc></url>
+  <url><loc>https://ripereads.example/read-next/twisted-love/</loc></url>
+  <url><loc>https://ripereads.example/read-next/haunting-adeline/</loc></url>
 </urlset>

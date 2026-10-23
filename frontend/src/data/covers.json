@@ -498,5 +498,85 @@
   "icebreaker": {
     "url": "https://covers.openlibrary.org/b/id/13180728-L.jpg",
     "source": "openlibrary-search"
+  },
+  "a-boy-called-christmas": {
+    "url": "https://covers.openlibrary.org/b/id/8539172-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "the-christmas-pig": {
+    "url": "https://covers.openlibrary.org/b/id/12458195-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "anne-of-green-gables": {
+    "url": "https://covers.openlibrary.org/b/isbn/9780147514004-L.jpg?default=false",
+    "source": "openlibrary-isbn"
+  },
+  "coraline": {
+    "url": "https://covers.openlibrary.org/b/isbn/9780380807345-L.jpg?default=false",
+    "source": "openlibrary-isbn"
+  },
+  "the-wild-robot": {
+    "url": "https://covers.openlibrary.org/b/id/7443301-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "charlie-and-the-chocolate-factory": {
+    "url": "https://covers.openlibrary.org/b/id/12459564-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "matilda": {
+    "url": "https://covers.openlibrary.org/b/id/12889769-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "the-book-thief": {
+    "url": "https://covers.openlibrary.org/b/id/8153054-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "to-kill-a-mockingbird": {
+    "url": "https://covers.openlibrary.org/b/id/14351077-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "fahrenheit-451": {
+    "url": "https://covers.openlibrary.org/b/isbn/9781451673319-L.jpg?default=false",
+    "source": "openlibrary-isbn"
+  },
+  "klara-and-the-sun": {
+    "url": "https://covers.openlibrary.org/b/id/10648686-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "the-fault-in-our-stars": {
+    "url": "https://covers.openlibrary.org/b/id/7418786-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "one-of-us-is-lying": {
+    "url": "https://covers.openlibrary.org/b/isbn/9781524714680-L.jpg?default=false",
+    "source": "openlibrary-isbn"
+  },
+  "the-hate-u-give": {
+    "url": "https://covers.openlibrary.org/b/isbn/9780062498533-L.jpg?default=false",
+    "source": "openlibrary-isbn"
+  },
+  "the-perks-of-being-a-wallflower": {
+    "url": "https://covers.openlibrary.org/b/id/14315052-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "the-bodyguard-katherine-center": {
+    "url": "https://covers.openlibrary.org/b/id/12824309-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "it-ends-with-us": {
+    "url": "https://covers.openlibrary.org/b/id/10473609-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "the-housemaid": {
+    "url": "https://covers.openlibrary.org/b/id/15105883-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "twisted-love": {
+    "url": "https://covers.openlibrary.org/b/id/12940491-L.jpg",
+    "source": "openlibrary-search"
+  },
+  "haunting-adeline": {
+    "url": "https://covers.openlibrary.org/b/id/12992962-L.jpg",
+    "source": "openlibrary-search"
   }
 }

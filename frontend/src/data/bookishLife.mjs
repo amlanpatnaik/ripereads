@@ -530,6 +530,10 @@ bookishLife.push({
         { slug: "diary-of-a-wimpy-kid-the-getaway", label: "Diary of a Wimpy Kid: The Getaway" },
         { slug: "a-christmas-carol", label: "A Christmas Carol" },
         { slug: "the-lion-the-witch-and-the-wardrobe", label: "The Lion, the Witch and the Wardrobe" },
+        { slug: "a-boy-called-christmas", label: "A Boy Called Christmas" },
+        { slug: "the-christmas-pig", label: "The Christmas Pig" },
+        { slug: "anne-of-green-gables", label: "Anne of Green Gables" },
+        { slug: "coraline", label: "Coraline" },
       ],
       heading: "Fall, winter & Christmas books for middle grade readers (ages 9–12)",
       booksHeading: "Fall & spooky-season picks (September–October)",
@@ -602,7 +606,7 @@ bookishLife.push({
           ageNote: "Middle grade, ages 8–12",
           cover: cover(8539172),
           alt: "Cover of A Boy Called Christmas by Matt Haig, showing a boy riding a reindeer across a full moon",
-          blurb: "A poor woodcutter's son named Nikolas sets out for the far north and finds a village of elves — the origin story of Father Christmas, told with Matt Haig's dry humor and a genuinely moving streak. Adapted into a 2021 film, which makes it an easy sell for reluctant readers.",
+          blurb: "A poor woodcutter's son named Nikolas sets out for the far north and finds a village of elves — the origin story of Father Christmas, told with Matt Haig's dry humor and a genuinely moving streak. Adapted into a 2021 film, which makes it an easy sell for reluctant readers. Rated ten-plus here, with a read-aloud note from seven; pair it with Aarka Origins' Sleigh Ride candle (cranberries, pine, cinnamon), featured on the Christmas books for 8 to 12 year olds list.",
         },
         {
           title: "The Birchbark House",
@@ -672,6 +676,7 @@ bookishLife.push({
         { slug: "dash-and-lilys-book-of-dares", label: "Dash & Lily's Book of Dares" },
         { slug: "little-women", label: "Little Women" },
         { slug: "harry-potter-and-the-deathly-hallows", label: "Deathly Hallows" },
+        { slug: "the-bodyguard-katherine-center", label: "The Bodyguard" },
       ],
       heading: "Fall, winter & holiday YA books for teens (ages 13+)",
       booksHeading: "Fall & gothic picks (September–October)",
@@ -798,11 +803,19 @@ bookishLife.push({
     },
     {
       q: "What are the best Christmas books for middle grade readers (ages 9–12)?",
-      a: "The Best Christmas Pageant Ever by Barbara Robinson, A Boy Called Christmas by Matt Haig, and The Lion, the Witch and the Wardrobe by C.S. Lewis, where Narnia is \"always winter and never Christmas.\" For a snowbound adventure with a gothic edge, try The Wolves of Willoughby Chase by Joan Aiken.",
+      a: "The Best Christmas Pageant Ever by Barbara Robinson, A Boy Called Christmas by Matt Haig, The Christmas Pig by J.K. Rowling, and The Lion, the Witch and the Wardrobe by C.S. Lewis, where Narnia is \"always winter and never Christmas.\" For a snowbound adventure with a gothic edge, try The Wolves of Willoughby Chase by Joan Aiken.",
     },
     {
       q: "What are good Christmas and holiday books for teens?",
       a: "Dash & Lily's Book of Dares by Rachel Cohn and David Levithan, Let It Snow by John Green, Maureen Johnson, and Lauren Myracle, and the anthology My True Love Gave to Me edited by Stephanie Perkins — all holiday romances kept at a kissing level rather than anything steamier. For Hanukkah, Eight Nights of Flirting by Hannah Reynolds. For a teen who prefers ghosts to romance, The Afterlife of Holly Chase by Cynthia Hand retells A Christmas Carol.",
+    },
+    {
+      q: "Is The Christmas Pig or A Boy Called Christmas too scary for a 7 year old?",
+      a: "Usually not, as a read-aloud. Both are rated ten-plus on this site, its floor, with a note that they work from about seven. The Christmas Pig's last quarter is a long chase by the Loser, a monster that swallows lost things, which can frighten a child who found the Dementors too much. A Boy Called Christmas has a cruel aunt and a father who does not come home. Read them a chapter a night through Advent and talk about the hard parts as they come.",
+    },
+    {
+      q: "What candle goes with A Boy Called Christmas?",
+      a: "Sleigh Ride from Aarka Origins: cranberries, pine, cinnamon and woods, with children sledging on the label. It suits Nikolas's journey north with a reindeer called Blitzen and is the featured candle on this site's Christmas books for 8 to 12 year olds list. It's not a licensed tie-in, there's no affiliate link, and an adult should light it.",
     },
     {
       q: "Is there a Diary of a Wimpy Kid Christmas book?",
@@ -1023,6 +1036,7 @@ bookishLife.push({
     { q: "What's a good book and candle gift for a 10 year old?", a: "The Best Christmas Pageant Ever with Old Christmas Charm, Diary of a Wimpy Kid: The Getaway with Beach and Books, or Wonder with Reading Nook. The candle is for the adult doing the reading aloud, or for a supervised reading corner; it's an open flame." },
     { q: "What's a good book and candle gift for a 13 year old?", a: "Heartstopper Volume 1 with Cozy Winter Reads, The Fellowship of the Ring with The Shire, or Order of the Phoenix with Headmaster's Office. All three books sit at twelve-plus on this site." },
     { q: "What candle goes with In a Holidaze?", a: "Christmas Cabin, cinnamon, berries, balsam and orange zest, with a snowbound log cabin on the label. The book is set in a family cabin in the Utah mountains at Christmas. Netflix's film premieres December 2, 2026; the book is adult romance, rated sixteen-plus here." },
+    { q: "Is there a Coraline candle or an Anne of Green Gables candle?", a: "Yes, both from the same maker. Aarka Origins sells a Coraline candle (mango, coconut milk, sugar) and a Green Gables candle (cherry blossom, freesia). Neither is a licensed product. Coraline and Anne of Green Gables are both rated ten-plus on this site; Coraline is a real horror story for children, so check its page before handing it to a sensitive reader." },
     { q: "Are these candles official book merchandise?", a: "No. Except where the maker names a book itself (March Family Christmas for Little Women), each pairing is my match based on the listed scent notes. None are licensed, and I have no affiliate link or sponsorship with Aarka Origins." },
     { q: "Why don't the candles show star ratings?", a: "Because the product listings didn't show review counts I could confirm when I wrote this, and I don't print ratings I can't check." },
     { q: "Is it safe to give a candle to a child?", a: "Treat it as a gift for the household, not the child. Every candle here is a soy candle with a cotton wick and a real flame: light it where an adult can see it, keep it away from bedding and paper, and never leave it burning in a child's room." },
